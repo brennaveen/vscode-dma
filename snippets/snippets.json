@@ -1,0 +1,5722 @@
+{
+	"Comment": {
+		"prefix": "dma-comment",
+		"body": [
+            "***$1"
+		],
+		"description": "DMA Server Screen"
+	},
+	"Comment With Newline": {
+		"prefix": "dma-comment-newline",
+		"body": [
+            "***",
+            "$1"
+		],
+		"description": "DMA Server Screen"
+	},
+	"SFA - Server Screen": {
+		"prefix": "dma-sfa-screen",
+		"body": [
+			"BEG SCREEN,no",
+            "LOA {",
+            "***LOA\t\"SessionVars\": \"Var1=value1&Var2=value2\",",
+            "LOA\t\"ScreenPrefix\": \"MY_SCREEN_PREFIX\",",
+            "LOA\t\"Title\": \"Screen Title\",",
+            "LOA\t\"FunctionKeysConfigurationPath\": \"dmstore\",",
+            "LOA\t\"FunctionKeysConfigurationFile\": \"sfafile\",",
+            "LOA\t\"FunctionKeysConfigurationTask\": \"FUNCTION_KEYS\",",
+            "LOA\t\"ModeKeysConfigurationPath\": \"dmstore\",",
+            "LOA\t\"ModeKeysConfigurationFile\": \"sfafile\",",
+            "LOA\t\"ModeKeysConfigurationTask\": \"MODE_KEYS\",",
+            "LOA\t\"TemplateSfaConfigurationPath\": \"dmstore\",",
+            "LOA\t\"TemplateSfaConfigurationFile\": \"sfafile\",",
+            "LOA\t\"TemplateSfaConfigurationTask\": \"SCREEN_TEMPLATE\"",
+            "LOA }",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Screen"
+	},
+	"SFA - Server Screen Template": {
+		"prefix": "dma-sfa-screen-template",
+		"body": [
+			"BEG SCREEN_TEMPLATE,no",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Screen Template"
+	},
+	"SFA - Server Screen Template Item - dmaServerCustomFields": {
+		"prefix": "dma-sfa-screen-template-item-server-custom-fields",
+		"body": [
+			"LOA <dma:dmaServerCustomFields ID=\"customFields\" SfaConfigurationPath=\"dmstore\" SfaConfigurationFile=\"sfafile\" SfaConfigurationTask=\"CUSTOM_FIELDS\" />",
+			"$1"
+		],
+		"description": "DMA Server Screen Template Item - dmaServerCustomFields"
+	},
+	"SFA - Server Screen Template Item - dmaServerGridLastScan": {
+		"prefix": "dma-sfa-screen-template-item-server-grid-last-scan",
+		"body": [
+			"LOA <dma:dmaServerGridLastScan ID=\"sgLastScan\" SfaConfigurationPath=\"dmstore\" SfaConfigurationFile=\"sfafile\" SfaConfigurationTask=\"LAST_SCAN\" />",
+			"$1"
+		],
+		"description": "DMA Server Screen Template Item - dmaServerGridLastScan"
+	},
+	"SFA - Server Screen Template Item - dmaServerGridPricing": {
+		"prefix": "dma-sfa-screen-template-item-server-grid-pricing",
+		"body": [
+			"LOA <dma:dmaServerGridPricing ID=\"gpPricing\" />",
+			"$1"
+		],
+		"description": "DMA Server Screen Template Item - dmaServerGridPricing"
+	},
+	"SFA - Server Screen Template Item - dmaServerInputUpcQuantity": {
+		"prefix": "dma-sfa-screen-template-item-server-input-upc-quantity",
+		"body": [
+			"LOA <dma:dmaServerInputUpcQuantity ID=\"inputUpcQuantity\" SfaConfigurationPath=\"dmstore\" SfaConfigurationFile=\"sfafile\" SfaConfigurationTask=\"UPC_QUANTITY_INPUT\" />",
+			"$1"
+		],
+		"description": "DMA Server Screen Template Item - dmaServerInputUpcQuantity"
+	},
+	"SFA - Server Screen Template Item - dmaServerTagCommands": {
+		"prefix": "dma-sfa-screen-template-item-server-tag-commands",
+		"body": [
+			"LOA <dma:dmaServerTagCommands ID=\"tagCommands\" />",
+			"$1"
+		],
+		"description": "DMA Server Screen Template Item - dmaServerTagCommands"
+	},
+	"SFA - Server Screen Menu": {
+		"prefix": "dma-sfa-screen-menu",
+		"body": [
+            "BEG MENU_SCREEN,no",
+            "LOA {",
+            "LOA\t\"Title\": \"Screen Title\",",
+            "LOA\t\"FunctionKeysConfigurationPath\": \"dmstore\",",
+            "LOA\t\"FunctionKeysConfigurationFile\": \"sfafile\",",
+            "LOA\t\"FunctionKeysConfigurationTask\": \"FUNCTION_KEYS\",",
+            "LOA\t\"ModeKeysConfigurationPath\": \"dmstore\",",
+            "LOA\t\"ModeKeysConfigurationFile\": \"sfafile\",",
+            "LOA\t\"ModeKeysConfigurationTask\": \"SFA_TASK\",",
+            "LOA\t\"MenuId\": 0",
+            "LOA }",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Screen Menu"
+	},
+	"SFA - Server Custom Fields": {
+		"prefix": "dma-sfa-custom-fields",
+		"body": [
+            "BEG CUSTOM_FIELDS,no",
+            "LOA {",
+            "LOA\t\"SqlCustomizationPath\": \"dmStore\",",
+            "LOA\t\"SqlCustomizationFile\": \"sfafile\",",
+            "LOA\t\"SqlCustomizationTask\": \"CUSTOM_FIELDS_SQL\",",
+            "LOA\t\"Parameters\": [",
+            "LOA\t]",
+            "LOA }",
+            "END",
+            "***",
+            "BEG CUSTOM_FIELDS_SQL,no",
+            "LOA SELECT PARAMATER_FIELDS FROM table",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Custom Fields"
+	},
+	"SFA - Server Custom Fields - Parameter": {
+		"prefix": "dma-custom-fields-parameter",
+		"body": [
+            "LOA\t{",
+            "LOA\t\"FieldName\": \"FIELD_NAME\",",
+            "LOA\t\"Prompt\": \"Prompt\"",
+            "***LOA\t\"DisplayRowOrder\": -1,",
+            "***LOA\t\"DisplayColumnOrder\": 0,",
+            "***LOA\t\"DisplayControlClass\": \"[dma_display_l]\",",
+            "***LOA\t\"DisplayColumnSpan\": 1",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Custom Fields - Parameter"
+	},
+	"SFA - Server Function Keys": {
+		"prefix": "dma-sfa-function-keys",
+		"body": [
+            "BEG FUNCTION_KEYS,no",
+            "LOA {",
+            "LOA\t\"FunctionKey1\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey2\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey3\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey4\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey5\":",
+            "LOA\t{",
+            "LOA\t}",
+            "LOA }",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Function Keys"
+	},
+	"SFA - Server Function Keys - Info Item": {
+		"prefix": "dma-sfa-function-keys-info-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"text to display\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Info Item"
+	},
+	"SFA - Server Function Keys - URL Item": {
+		"prefix": "dma-sfa-function-keys-url-item",
+		"body": [
+            "LOA\t{",
+                "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+                "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+                "LOA\t\t\"HeaderContents\": {",
+                "LOA\t\t\t\"Text\": \"text to display\"",
+                "LOA\t\t},",
+                "LOA\t\t\"DetailContents\": {",
+                "LOA\t\t\t\"Link\": {",
+                "LOA\t\t\t\t\"LinkType\": \"Url\",",
+                "***LOA\t\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+                "LOA\t\t\t\t\"Url\": \"http://myurl.com\",",
+                "LOA\t\t\t\t\"Text\": \"text to appear in link\"",
+                "LOA\t\t\t}",
+                "LOA\t\t}",
+                "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Url Item"
+	},
+	"SFA - Server Function Keys - Code Item": {
+		"prefix": "dma-sfa-function-keys-code-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\t\"HeaderContents\": {",
+            "LOA\t\t\t\"Text\": \"text to display\"",
+            "LOA\t\t},",
+            "LOA\t\t\"DetailContents\": {",
+            "LOA\t\t\t\"Link\": {",
+            "LOA\t\t\t\t\"LinkType\": \"Code\",",
+            "LOA\t\t\t\t\"EventHandler\": {",
+            "LOA\t\t\t\t\t\"FullyQualifiedClassName\": \"Namespace.ClassName, Assembly.Name\",",
+            "LOA\t\t\t\t\t\"MethodName\": \"StaticMethodInClassWithSenderEventArgsAsParams\"",
+            "LOA\t\t\t\t},",
+            "***LOA\t\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\t\"Text\": \"text to appear in link\"",
+            "LOA\t\t\t}",
+            "LOA\t\t}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Code Item"
+	},
+	"SFA - Server Function Keys - Help Item": {
+		"prefix": "dma-sfa-function-keys-help-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\t\"HeaderContents\": {",
+            "LOA\t\t\t\"Text\": \"Help\"",
+            "LOA\t\t},",
+            "LOA\t\t\"DetailContents\": {",
+            "LOA\t\t\t\"Link\": { ",
+            "LOA\t\t\t\t\"LinkType\": \"Url\",",
+            "LOA\t\t\t\t\"HotKey\": {\"KeyCode\": 72},",
+            "LOA\t\t\t\t\"Url\": \"/TemplatedScreenHelp.aspx?ScreenId=[ScreenId_UTKN]\",",
+            "LOA\t\t\t\t\"Text\": \"H-Help\"",
+            "LOA\t\t\t}",
+            "LOA\t\t}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Help Item"
+	},
+	"SFA - Server Function Keys - Previous Item": {
+		"prefix": "dma-sfa-function-keys-previous-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\t\"HeaderContents\": {",
+            "LOA\t\t\t\"Text\": \"text to display\"",
+            "LOA\t\t},",
+            "LOA\t\t\"DetailContents\": {",
+            "LOA\t\t\t\"Link\": {",
+            "LOA\t\t\t\t\"LinkType\": \"Previous\",",
+            "***LOA\t\t\t\t\"EventHandler\": {",
+            "***LOA\t\t\t\t\t\"FullyQualifiedClassName\": \"Namespace.ClassName, Assembly.Name\",",
+            "***LOA\t\t\t\t\t\"MethodName\": \"StaticMethodInClassWithSenderEventArgsAsParams\"",
+            "***LOA\t\t\t\t},",
+            "***LOA\t\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\t\"Text\": \"text to appear in link\"",
+            "LOA\t\t\t}",
+            "LOA\t\t}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Previous Item"
+	},
+	"SFA - Server Function Keys - Cycle Item": {
+		"prefix": "dma-sfa-function-keys-cycle-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\t\"HeaderContents\": {",
+            "LOA\t\t\t\"Text\": \"text to display\"",
+            "LOA\t\t},",
+            "LOA\t\t\"DetailContents\": {",
+            "LOA\t\t\t\"Link\": {",
+            "LOA\t\t\t\t\"LinkType\": \"Cycle\"",
+            "***LOA\t\t\t\t\"EventHandler\": {",
+            "***LOA\t\t\t\t\t\"FullyQualifiedClassName\": \"Namespace.ClassName, Assembly.Name\",",
+            "***LOA\t\t\t\t\t\"MethodName\": \"StaticMethodInClassWithSenderEventArgsAsParams\"",
+            "***LOA\t\t\t\t},",
+            "***LOA\t\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\t\"CycleSessionValues\": [\"value1\",\"value2\"],",
+            "LOA\t\t\t\t\"CycleDisplayValues\": [\"displayValue1\",\"displayValue2\"],",
+            "LOA\t\t\t\t\"SessionVariable\": \"sessionVariableInWhichTheCurrentValueIsStored\"",
+            "LOA\t\t\t}",
+            "LOA\t\t}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Function Keys - Cycle Item"
+	},
+	"SFA - Server Grid Last Scan": {
+		"prefix": "dma-sfa-grid-last-scan",
+		"body": [
+            "BEG LAST_SCAN,no",
+            "LOA {",
+            "LOA\t\"SqlSfaConfigurationPath\": \"dmStore\",",
+            "LOA\t\"SqlSfaConfigurationFile\": \"sfafile\"",
+            "LOA }",
+            "END",
+            "***",
+            "BEG LAST,no",
+            "LOA SELECT [UpcEan_STKN] AS UPCEAN, 1 AS CASES, 1 AS UNITS, 1 AS WEIGHT",
+            "END",
+            "***",
+            "BEG LAST_WHSEITM,no",
+            "LOA SELECT [UpcEan_STKN] AS UPCEAN, 1 AS CASES, 1 AS UNITS, 1 AS WEIGHT",
+            "END",
+            "***",
+            "BEG LAST_CUW,no",
+            "LOA SELECT [UpcEan_STKN] AS UPCEAN, 'DESC' AS DESCRIPTION, 1 AS CUW",
+            "END",
+            "***",
+            "BEG LAST_CUW_WHSEITM,no",
+            "LOA SELECT [UpcEan_STKN] AS UPCEAN, 'ABCD' AS DESCRIPTION, 1 AS CUW",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Grid Last Scan"
+	},
+	"SFA - Server Input UPC Quantity": {
+		"prefix": "dma-sfa-input-upc-quantity",
+		"body": [
+            "BEG UPC_QUANTITY_INPUT,no",
+            "LOA {",
+            "***LOA\t\"ShowUpc\": [true]|false,",
+            "***LOA\t\"ShowQuantity\": true|[false],",
+            "***LOA\t\"CompleteDataSqlCommandTask\": \"TASK_NAME_FOR_SQL_COMMAND\",",
+            "LOA\t\"UpcValidationPath\": \"sfaFilePathRelativeToDMA\\SFA\",",
+            "LOA\t\"UpcValidationFile\": \"sfaFileWithValidationTasks\"",
+            "LOA }",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Input UPC Quantity"
+	},
+	"SFA - Server Input UPC Quantity - Validation SQL": {
+		"prefix": "dma-sfa-input-upc-quantity-validation-sql",
+		"body": [
+            "BEG PREFIX_SCAN_UPCEAN,no",
+            "END",
+            "***",
+            "BEG PREFIX_SCAN_VNDITM,no",
+            "END",
+            "***",
+            "BEG PREFIX_SCAN_WHSEITM,no",
+            "END",
+            "***",
+            "BEG PREFIX_SCAN_WHSEITM_XREF,no",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Input UPC Quantity - Validation SQL"
+	},
+	"SFA - Server Mode Keys": {
+		"prefix": "dma-sfa-mode-keys",
+		"body": [
+            "BEG MODE_KEYS,no",
+            "LOA {",
+            "LOA\t\"FunctionKey1\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey2\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey3\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey4\":",
+            "LOA\t{",
+            "LOA\t},",
+            "LOA\t\"FunctionKey5\":",
+            "LOA\t{",
+            "LOA\t}",
+            "LOA }",
+            "END",
+            "***",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys"
+	},
+	"SFA - Server Mode Keys Info Item": {
+		"prefix": "dma-sfa-mode-keys-info-item",
+		"body": [
+            "LOA\t{",
+            "***LOA\t\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\t\"HeaderContents\": {",
+            "LOA\t\t\t\"Text\": \"text to display\"",
+            "LOA\t\t},",
+            "LOA\t\t\"DetailContents\": {}",
+            "LOA\t},",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys Info Item"
+	},
+	"SFA - Server Mode Keys URL Item": {
+		"prefix": "dma-sfa-mode-keys-url-item",
+		"body": [
+            "LOA {",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"text to display\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {",
+            "LOA\t\t\"Link\": {",
+            "LOA\t\t\t\"LinkType\": \"Url\",",
+            "***LOA\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\"Url\": \"http://myurl.com\",",
+            "LOA\t\t\t\"Text\": \"text to appear in link\"",
+            "LOA\t\t}",
+            "LOA\t}",
+            "LOA },",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys URL Item"
+	},
+	"SFA - Server Mode Keys Code Item": {
+		"prefix": "dma-sfa-mode-keys-code-item",
+		"body": [
+            "LOA {",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"text to display\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {",
+            "LOA\t\t\"Link\": {",
+            "LOA\t\t\t\"LinkType\": \"Url\",",
+            "***LOA\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\"Url\": \"http://myurl.com\",",
+            "LOA\t\t\t\"Text\": \"text to appear in link\"",
+            "LOA\t\t}",
+            "LOA\t}",
+            "LOA },",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys Code Item"
+	},
+	"SFA - Server Mode Keys Help Item": {
+		"prefix": "dma-sfa-mode-keys-help-item",
+		"body": [
+            "LOA {",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"Help\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {",
+            "LOA\t\t\"Link\": { ",
+            "LOA\t\t\t\"LinkType\": \"Url\",",
+            "LOA\t\t\t\"HotKey\": {\"KeyCode\": 72},",
+            "LOA\t\t\t\"Url\": \"/TemplatedScreenHelp.aspx?ScreenId=[ScreenId_UTKN]\",",
+            "LOA\t\t\t\"Text\": \"H-Help\"",
+            "LOA\t\t}",
+            "LOA\t}",
+            "LOA },",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys Help Item"
+	},
+	"SFA - Server Mode Keys Previous Item": {
+		"prefix": "dma-sfa-mode-keys-previous-item",
+		"body": [
+            "LOA {",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"text to display\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {",
+            "LOA\t\t\"Link\": {",
+            "LOA\t\t\t\"LinkType\": \"Previous\",",
+            "***LOA\t\t\t\"EventHandler\": {",
+            "***LOA\t\t\t\t\"FullyQualifiedClassName\": \"Namespace.ClassName, Assembly.Name\",",
+            "***LOA\t\t\t\t\"MethodName\": \"StaticMethodInClassWithSenderEventArgsAsParams\"",
+            "***LOA\t\t\t},",
+            "***LOA\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\"Text\": \"text to appear in link\"",
+            "LOA\t\t}",
+            "LOA\t}",
+            "LOA },",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys Previous Item"
+	},
+	"SFA - Server Mode Keys Cycle Item": {
+		"prefix": "dma-sfa-mode-keys-cycle-item",
+		"body": [
+            "LOA {",
+            "***LOA\t\"VisibleCondition\": 'C# code that resolves to a bool value',",
+            "***LOA\t\"VisibleRole\": \"A Role that would need to be assigned to the logged in user\",",
+            "LOA\t\"HeaderContents\": {",
+            "LOA\t\t\"Text\": \"text to display\"",
+            "LOA\t},",
+            "LOA\t\"DetailContents\": {",
+            "LOA\t\t\"Link\": {",
+            "LOA\t\t\t\"LinkType\": \"Cycle\",",
+            "***LOA\t\t\t\"EventHandler\": {",
+            "***LOA\t\t\t\"FullyQualifiedClassName\": \"Namespace.ClassName, Assembly.Name\",",
+            "***LOA\t\t\t\"MethodName\": \"StaticMethodInClassWithSenderEventArgsAsParams\"",
+            "***LOA\t\t},",
+            "***LOA\t\t\t\"HotKey\": {\"KeyCode\": \"CodeOfKeyThatWillClickLinkWhenPressed\"},",
+            "LOA\t\t\t\"CycleSessionValues\": [\"value1\",\"value2\"],",
+            "LOA\t\t\t\"CycleDisplayValues\": [\"displayValue1\",\"displayValue2\"],",
+            "LOA\t\t\t\"SessionVariable\": \"sessionVariableInWhichTheCurrentValueIsStored\"",
+            "LOA\t\t}",
+            "LOA\t}",
+            "LOA },",
+			"$1"
+		],
+		"description": "DMA Server Mode Keys Cycle Item"
+	},
+	"Switch - CLOG": {
+		"prefix": "dma-switch-clog",
+		"body": [
+            "SWO CLOG",
+            "SWF CLOG",
+			"$1"
+		],
+		"description": "DMA Switch (CLOG) - Consolidate Log Files"
+	},
+	"Switch - CMJS": {
+		"prefix": "dma-switch-cmjs",
+		"body": [
+            "SWO CMJS",
+            "SWF CMJS",
+			"$1"
+		],
+		"description": "DMA Switch (CMJS) - Clear Managed Job Status When dmBuilder Job Completes"
+	},
+	"Switch - DLST": {
+		"prefix": "dma-switch-dlst",
+		"body": [
+            "SWO DLST",
+            "SWF DLST",
+			"$1"
+		],
+		"description": "DMA Switch (DLST) - Deferred List (unresolved until TLC processing begins)"
+	},
+	"Switch - DOC": {
+		"prefix": "dma-switch-doc",
+		"body": [
+            "SWO DOC",
+            "SWF DOC",
+			"$1"
+		],
+		"description": "DMA Switch (DOC) - document only"
+	},
+	"Switch - ELOG": {
+		"prefix": "dma-switch-elog",
+		"body": [
+            "SWO ELOG",
+            "SWF ELOG",
+			"$1"
+		],
+		"description": "DMA Switch (ELOG) - Create Error Log (along with DMA Log)"
+	},
+	"Switch - ELSM": {
+		"prefix": "dma-switch-elsm",
+		"body": [
+            "SWO ELSM",
+            "SWF ELSM",
+			"$1"
+		],
+		"description": "DMA Switch (ELSM) - Write Task Summary to Error Log"
+	},
+	"Switch - ERR": {
+		"prefix": "dma-switch-err",
+		"body": [
+            "SWO ERR",
+            "SWF ERR",
+			"$1"
+		],
+		"description": "DMA Switch (ERR) - Error Logging (On/Off)"
+	},
+	"Switch - GUI": {
+		"prefix": "dma-switch-gui",
+		"body": [
+            "SWO GUI",
+            "SWF GUI",
+			"$1"
+		],
+		"description": "DMA Switch (GUI) - GUI On"
+	},
+	"Switch - ISMS": {
+		"prefix": "dma-switch-isms",
+		"body": [
+            "SWO ISMS",
+            "SWF ISMS",
+			"$1"
+		],
+		"description": "DMA Switch (ISMS) - Is Multi-Store Mode (used to create store subdirectories)"
+	},
+	"Switch - ISRE": {
+		"prefix": "dma-switch-isre",
+		"body": [
+            "SWO ISRE",
+            "SWF ISRE",
+			"$1"
+		],
+		"description": "DMA Switch (ISRE) - Is Reload"
+	},
+	"Switch - RHDR": {
+		"prefix": "dma-switch-rhdr",
+		"body": [
+            "SWO RHDR",
+            "SWF RHDR",
+			"$1"
+		],
+		"description": "DMA Switch (RHDR) - Repeat Header Info in log for each TLF file"
+	},
+	"Switch - SDXS": {
+		"prefix": "dma-switch-sdxs",
+		"body": [
+            "SWO SDXS",
+            "SWF SDXS",
+			"$1"
+		],
+		"description": "DMA Switch (SDXS) - Apply Transformations (will not apply SDX/UDX if switch is on"
+	},
+	"Switch - SWQS": {
+		"prefix": "dma-switch-swqs",
+		"body": [
+            "SWO SWQS",
+            "SWF SWQS",
+			"$1"
+		],
+		"description": "DMA Switch (SWQS) - Set Work Queue Job Status when dmBuilder job completes (will set to Error, Complete)"
+	},
+	"Switch - VIS7": {
+		"prefix": "dma-switch-vis7",
+		"body": [
+            "SWO VIS7",
+            "SWF VIS7",
+			"$1"
+		],
+		"description": "DMA Switch (VIS7) - Is VIS7 Flag (determines if there are 7 days of VIS views"
+	},
+	"Switch - WLOG": {
+		"prefix": "dma-switch-wlog",
+		"body": [
+            "SWO WLOG",
+            "SWF WLOG",
+			"$1"
+		],
+		"description": "DMA Switch (WLOG) - Create Warn Log (along with DMA log)"
+	},
+	"Switch - WLSM": {
+		"prefix": "dma-switch-wlsm",
+		"body": [
+            "SWO WLSM",
+            "SWF WLSM",
+			"$1"
+		],
+		"description": "DMA Switch (WLSM) - Write Task Summary To Warn Log"
+	},
+	"Switch - XUDL": {
+		"prefix": "dma-switch-xudl",
+		"body": [
+            "SWO XUDL",
+            "SWF XUDL",
+			"$1"
+		],
+		"description": "DMA Switch (XUDL) - Delete UDL (list) before exiting dmBuilder"
+    },
+    "SDR - ALRT" : {
+        "prefix": "dma-sdr-alrt",
+        "body": [
+            "%ALRT",
+            "$1"
+        ],
+        "description": "DMA SDR (ALRT) - Alert Id (as defined in the registry or command line)"
+    },
+    "SDR - CALF" : {
+        "prefix": "dma-sdr-calf",
+        "body": [
+            "%CALF",
+            "$1"
+        ],
+        "description": "DMA SDR (CALF) - CalType Fiscal (as defined in the registry)"
+    },
+    "SDR - CALS" : {
+        "prefix": "dma-sdr-cals",
+        "body": [
+            "%CALS",
+            "$1"
+        ],
+        "description": "DMA SDR (CALS) - CalType Sales (as defined in the registry)"
+    },
+    "SDR - CONE" : {
+        "prefix": "dma-sdr-cone",
+        "body": [
+            "%CONE",
+            "$1"
+        ],
+        "description": "DMA SDR (CONE) - Extract Connection Name"
+    },
+    "SDR - CONL" : {
+        "prefix": "dma-sdr-conl",
+        "body": [
+            "%CONL",
+            "$1"
+        ],
+        "description": "DMA SDR (CONL) - Load Connection Name"
+    },
+    "SDR - CONN" : {
+        "prefix": "dma-sdr-conn",
+        "body": [
+            "%CONN",
+            "$1"
+        ],
+        "description": "DMA SDR (CONN) - Value of the conn udr (\"conn\" udr from command line)"
+    },
+    "SDR - CON2" : {
+        "prefix": "dma-sdr-con2",
+        "body": [
+            "%CON2",
+            "$1"
+        ],
+        "description": "DMA SDR (CON2) - Value of the con2 udr (\"con2\" udr from command line)"
+    },
+    "SDR - CRLF" : {
+        "prefix": "dma-sdr-crlf",
+        "body": [
+            "%CRLF",
+            "$1"
+        ],
+        "description": "DMA SDR (CRLF) - Carriage Return/Line Feed character"
+    },
+    "SDR - CTLx" : {
+        "prefix": "dma-sdr-ctlx",
+        "body": [
+            "%CTLx",
+            "$1"
+        ],
+        "description": "DMA SDR (CTLx) - Control Store (ctlstr=1 from command line)"
+    },
+    "SDR - CTL2" : {
+        "prefix": "dma-sdr-ctl2",
+        "body": [
+            "%CTL2",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL2) - 2-digit,zero-padded 00"
+    },
+    "SDR - CTL3" : {
+        "prefix": "dma-sdr-ctl3",
+        "body": [
+            "%CTL3",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL3) - 3-digit,zero-padded 000"
+    },
+    "SDR - CTL4" : {
+        "prefix": "dma-sdr-ctl4",
+        "body": [
+            "%CTL4",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL4) - 4-digit,zero-padded 0000"
+    },
+    "SDR - CTL5" : {
+        "prefix": "dma-sdr-ctl5",
+        "body": [
+            "%CTL5",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL5) - 5-digit,zero-padded 00000"
+    },
+    "SDR - CTL6" : {
+        "prefix": "dma-sdr-ctl6",
+        "body": [
+            "%CTL6",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL6) - 6-digit,zero-padded 000000"
+    },
+    "SDR - CTL7" : {
+        "prefix": "dma-sdr-ctl7",
+        "body": [
+            "%CTL7",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL7) - 7-digit,zero-padded 0000000"
+    },
+    "SDR - CTL8" : {
+        "prefix": "dma-sdr-ctl8",
+        "body": [
+            "%CTL8",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL8) - 8-digit,zero-padded 00000000"
+    },
+    "SDR - CTL9" : {
+        "prefix": "dma-sdr-ctl9",
+        "body": [
+            "%CTL9",
+            "$1"
+        ],
+        "description": "DMA SDR (CTL9) - 9-digit,zero-padded 000000000"
+    },
+    "SDR - CTLF" : {
+        "prefix": "dma-sdr-ctlf",
+        "body": [
+            "%CTLF",
+            "$1"
+        ],
+        "description": "DMA SDR (CTLF) - Control Store Formatted (based on StorePad Registry variable)"
+    },
+    "SDR - CTLU" : {
+        "prefix": "dma-sdr-ctlu",
+        "body": [
+            "%CTLU",
+            "$1"
+        ],
+        "description": "DMA SDR (CTLU) - Control Store Unformated"
+    },
+    "SDR - CUSN" : {
+        "prefix": "dma-sdr-cusn",
+        "body": [
+            "%CUSN",
+            "$1"
+        ],
+        "description": "DMA SDR (CUSN) - Customer Name (as defined in the Registry)"
+    },
+    "SDR - CUSP" : {
+        "prefix": "dma-sdr-cusp",
+        "body": [
+            "%CUSP",
+            "$1"
+        ],
+        "description": "DMA SDR (CUSP) - Customer Prefix (as defined in the Registry)"
+    },
+    "SDR - DIRA" : {
+        "prefix": "dma-sdr-dira",
+        "body": [
+            "%DIRA",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRA) - Archive Directory"
+    },
+    "SDR - DIRB" : {
+        "prefix": "dma-sdr-dirb",
+        "body": [
+            "%DIRB",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRB) - Bulk Load Directory"
+    },
+    "SDR - DIRC" : {
+        "prefix": "dma-sdr-dirc",
+        "body": [
+            "%DIRC",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRC) - TLC Directory"
+    },
+    "SDR - DIRD" : {
+        "prefix": "dma-sdr-dird",
+        "body": [
+            "%DIRD",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRD) - Database Directory"
+    },
+    "SDR - DIRE" : {
+        "prefix": "dma-sdr-dire",
+        "body": [
+            "%DIRE",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRE) - Export Directory"
+    },
+    "SDR - DIRF" : {
+        "prefix": "dma-sdr-dirf",
+        "body": [
+            "%DIRF",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRF) - TLF Directory"
+    },
+    "SDR - DIRG" : {
+        "prefix": "dma-sdr-dirg",
+        "body": [
+            "%DIRG",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRG) - Database Log Directory"
+    },
+    "SDR - DIRH" : {
+        "prefix": "dma-sdr-dirh",
+        "body": [
+            "%DIRH",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRH) - Database Index Directory"
+    },
+    "SDR - DIRI" : {
+        "prefix": "dma-sdr-diri",
+        "body": [
+            "%DIRI",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRI) - Import Directory"
+    },
+    "SDR - DIRK" : {
+        "prefix": "dma-sdr-dirk",
+        "body": [
+            "%DIRK",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRK) - TSK Directory"
+    },
+    "SDR - DIRL" : {
+        "prefix": "dma-sdr-dirl",
+        "body": [
+            "%DIRL",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRL) - Log Directory"
+    },
+    "SDR - DIRM" : {
+        "prefix": "dma-sdr-dirm",
+        "body": [
+            "%DIRM",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRM) - DMA Data Directory"
+    },
+    "SDR - DIRN" : {
+        "prefix": "dma-sdr-dirn",
+        "body": [
+            "%DIRN",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRN) - Install Directory"
+    },
+    "SDR - DIRP" : {
+        "prefix": "dma-sdr-dirp",
+        "body": [
+            "%DIRP",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRP) - Upgrade Directory"
+    },
+    "SDR - DIRQ" : {
+        "prefix": "dma-sdr-dirq",
+        "body": [
+            "%DIRQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRQ) - SQL for Applications (SFA) Directory"
+    },
+    "SDR - DIRR" : {
+        "prefix": "dma-sdr-dirr",
+        "body": [
+            "%DIRR",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRR) - Reports Directory"
+    },
+    "SDR - DIRS" : {
+        "prefix": "dma-sdr-dirs",
+        "body": [
+            "%DIRS",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRS) - Schema Directory"
+    },
+    "SDR - DIRT" : {
+        "prefix": "dma-sdr-dirt",
+        "body": [
+            "%DIRT",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRT) - Network Directory"
+    },
+    "SDR - DIRU" : {
+        "prefix": "dma-sdr-diru",
+        "body": [
+            "%DIRU",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRU) - UDX Directory"
+    },
+    "SDR - DIRV" : {
+        "prefix": "dma-sdr-dirv",
+        "body": [
+            "%DIRV",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRV) - Data Exchange Directory"
+    },
+    "SDR - DIRW" : {
+        "prefix": "dma-sdr-dirw",
+        "body": [
+            "%DIRW",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRW) - Web Reports Directory"
+    },
+    "SDR - DIRX" : {
+        "prefix": "dma-sdr-dirx",
+        "body": [
+            "%DIRX",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRX) - XML Directory"
+    },
+    "SDR - DIRY" : {
+        "prefix": "dma-sdr-diry",
+        "body": [
+            "%DIRY",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRY) - Upgrade Directory"
+    },
+    "SDR - DIRZ" : {
+        "prefix": "dma-sdr-dirz",
+        "body": [
+            "%DIRZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DIRZ) - Zip and Unzip exe Directory"
+    },
+    "SDR - DMyA" : {
+        "prefix": "dma-sdr-dmya",
+        "body": [
+            "%DMyA",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyA) - Dflt Date minus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - DMyB" : {
+        "prefix": "dma-sdr-dmyb",
+        "body": [
+            "%DMyB",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyB) - Dflt Date minus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - DMyD" : {
+        "prefix": "dma-sdr-dmyd",
+        "body": [
+            "%DMyD",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyD) - Dflt Date minus y days (where y=0-9) Day DD"
+    },
+    "SDR - DMyI" : {
+        "prefix": "dma-sdr-dmyi",
+        "body": [
+            "%DMyI",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyI) - Dflt Date minus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - DMyJ" : {
+        "prefix": "dma-sdr-dmyj",
+        "body": [
+            "%DMyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyJ) - Dflt Date minus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - DMyK" : {
+        "prefix": "dma-sdr-dmyk",
+        "body": [
+            "%DMyK",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyK) - Dflt Date minus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - DMyM" : {
+        "prefix": "dma-sdr-dmym",
+        "body": [
+            "%DMyM",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyM) - Dflt Date minus y days (where y=0-9) Month MM"
+    },
+    "SDR - DMyQ" : {
+        "prefix": "dma-sdr-dmyq",
+        "body": [
+            "%DMyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyQ) - Dflt Date minus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - DMyR" : {
+        "prefix": "dma-sdr-dmyr",
+        "body": [
+            "%DMyR",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyR) - Dflt Date minus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - DMyS" : {
+        "prefix": "dma-sdr-dmys",
+        "body": [
+            "%DMyS",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyS) - Dflt Date minus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - DMyT" : {
+        "prefix": "dma-sdr-dmyt",
+        "body": [
+            "%DMyT",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyT) - Dflt Date minus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - DMyU" : {
+        "prefix": "dma-sdr-dmyu",
+        "body": [
+            "%DMyU",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyU) - Dflt Date minus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - DMyV" : {
+        "prefix": "dma-sdr-dmyv",
+        "body": [
+            "%DMyV",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyV) - Dflt Date minus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - DMyW" : {
+        "prefix": "dma-sdr-dmyw",
+        "body": [
+            "%DMyW",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyW) - Dflt Date minus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - DMyX" : {
+        "prefix": "dma-sdr-dmyx",
+        "body": [
+            "%DMyX",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyX) - Dflt Date minus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - DMyY" : {
+        "prefix": "dma-sdr-dmyy",
+        "body": [
+            "%DMyY",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyY) - Dflt Date minus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - DMyZ" : {
+        "prefix": "dma-sdr-dmyz",
+        "body": [
+            "%DMyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DMyZ) - Dflt Date minus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - DPyA" : {
+        "prefix": "dma-sdr-dpya",
+        "body": [
+            "%DPyA",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyA) - Dflt Date plus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - DPyB" : {
+        "prefix": "dma-sdr-dpyb",
+        "body": [
+            "%DPyB",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyB) - Dflt Date plus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - DPyD" : {
+        "prefix": "dma-sdr-dpyd",
+        "body": [
+            "%DPyD",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyD) - Dflt Date plus y days (where y=0-9) Day DD"
+    },
+    "SDR - DPyI" : {
+        "prefix": "dma-sdr-dpyi",
+        "body": [
+            "%DPyI",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyI) - Dflt Date plus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - DPyJ" : {
+        "prefix": "dma-sdr-dpyj",
+        "body": [
+            "%DPyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyJ) - Dflt Date plus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - DPyK" : {
+        "prefix": "dma-sdr-dpyk",
+        "body": [
+            "%DPyK",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyK) - Dflt Date plus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - DPyM" : {
+        "prefix": "dma-sdr-dpym",
+        "body": [
+            "%DPyM",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyM) - Dflt Date plus y days (where y=0-9) Month MM"
+    },
+    "SDR - DPyQ" : {
+        "prefix": "dma-sdr-dpyq",
+        "body": [
+            "%DPyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyQ) - Dflt Date plus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - DPyR" : {
+        "prefix": "dma-sdr-dpyr",
+        "body": [
+            "%DPyR",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyR) - Dflt Date plus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - DPyS" : {
+        "prefix": "dma-sdr-dpys",
+        "body": [
+            "%DPyS",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyS) - Dflt Date plus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - DPyT" : {
+        "prefix": "dma-sdr-dpyt",
+        "body": [
+            "%DPyT",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyT) - Dflt Date plus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - DPyU" : {
+        "prefix": "dma-sdr-dpyu",
+        "body": [
+            "%DPyU",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyU) - Dflt Date plus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - DPyV" : {
+        "prefix": "dma-sdr-dpyv",
+        "body": [
+            "%DPyV",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyV) - Dflt Date plus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - DPyW" : {
+        "prefix": "dma-sdr-dpyw",
+        "body": [
+            "%DPyW",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyW) - Dflt Date plus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - DPyX" : {
+        "prefix": "dma-sdr-dpyx",
+        "body": [
+            "%DPyX",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyX) - Dflt Date plus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - DPyY" : {
+        "prefix": "dma-sdr-dpyy",
+        "body": [
+            "%DPyY",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyY) - Dflt Date plus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - DPyZ" : {
+        "prefix": "dma-sdr-dpyz",
+        "body": [
+            "%DPyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DPyZ) - Dflt Date plus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - DSPP" : {
+        "prefix": "dma-sdr-dspp",
+        "body": [
+            "%DSPP",
+            "$1"
+        ],
+        "description": "DMA SDR (DSPP) - Database Server Prefix for DMARP database"
+    },
+    "SDR - DSPR" : {
+        "prefix": "dma-sdr-dspr",
+        "body": [
+            "%DSPR",
+            "$1"
+        ],
+        "description": "DMA SDR (DSPR) - Database Server Prefix for DMARDM database"
+    },
+    "SDR - DSPS" : {
+        "prefix": "dma-sdr-dsps",
+        "body": [
+            "%DSPS",
+            "$1"
+        ],
+        "description": "DMA SDR (DSPS) - Database Server Prefix for DMASYS database"
+    },
+    "SDR - DSPV" : {
+        "prefix": "dma-sdr-dspv",
+        "body": [
+            "%DSPV",
+            "$1"
+        ],
+        "description": "DMA SDR (DSPV) - Database Server Prefix for DMAVISxx database(s)"
+    },
+    "SDR - DTDx" : {
+        "prefix": "dma-sdr-dtdx",
+        "body": [
+            "%DTDx",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDx) - Default Date (ddate=20070101 from command line)"
+    },
+    "SDR - DTDA" : {
+        "prefix": "dma-sdr-dtda",
+        "body": [
+            "%DTDA",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDA) - Default Date MMDDYY"
+    },
+    "SDR - DTDB" : {
+        "prefix": "dma-sdr-dtdb",
+        "body": [
+            "%DTDB",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDB) - Default Date MMDDYYYY"
+    },
+    "SDR - DTDD" : {
+        "prefix": "dma-sdr-dtdd",
+        "body": [
+            "%DTDD",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDD) - Default Date Day DD"
+    },
+    "SDR - DTDI" : {
+        "prefix": "dma-sdr-dtdi",
+        "body": [
+            "%DTDI",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDI) - Default Date ISO Date YYYYMMDD"
+    },
+    "SDR - DTDJ" : {
+        "prefix": "dma-sdr-dtdj",
+        "body": [
+            "%DTDJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDJ) - Default Date Sun-Sat"
+    },
+    "SDR - DTDK" : {
+        "prefix": "dma-sdr-dtdk",
+        "body": [
+            "%DTDK",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDK) - Default Date Saturday-Sunday"
+    },
+    "SDR - DTDM" : {
+        "prefix": "dma-sdr-dtdm",
+        "body": [
+            "%DTDM",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDM) - Default Date Month MM"
+    },
+    "SDR - DTDO" : {
+        "prefix": "dma-sdr-dtdo",
+        "body": [
+            "%DTDO",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDO) - Default Date One-based DOW 1-7 (Sun-Sat)"
+    },
+    "SDR - DTDQ" : {
+        "prefix": "dma-sdr-dtdq",
+        "body": [
+            "%DTDQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDQ) - Default Date MM/DD/YY"
+    },
+    "SDR - DTDR" : {
+        "prefix": "dma-sdr-dtdr",
+        "body": [
+            "%DTDR",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDR) - Default Date YY/MM/DD"
+    },
+    "SDR - DTDS" : {
+        "prefix": "dma-sdr-dtds",
+        "body": [
+            "%DTDS",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDS) - Default Date SQL Date MM/DD/YYYY"
+    },
+    "SDR - DTDT" : {
+        "prefix": "dma-sdr-dtdt",
+        "body": [
+            "%DTDT",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDT) - Default Date YYYY/MM/DD"
+    },
+    "SDR - DTDU" : {
+        "prefix": "dma-sdr-dtdu",
+        "body": [
+            "%DTDU",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDU) - Default Date MM-DD-YY"
+    },
+    "SDR - DTDV" : {
+        "prefix": "dma-sdr-dtdv",
+        "body": [
+            "%DTDV",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDV) - Default Date YY-MM-DD"
+    },
+    "SDR - DTDW" : {
+        "prefix": "dma-sdr-dtdw",
+        "body": [
+            "%DTDW",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDW) - Default Date MM-DD-YYYY"
+    },
+    "SDR - DTDX" : {
+        "prefix": "dma-sdr-dtdx",
+        "body": [
+            "%DTDX",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDX) - Default Date YYYY-MM-DD"
+    },
+    "SDR - DTDY" : {
+        "prefix": "dma-sdr-dtdy",
+        "body": [
+            "%DTDY",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDY) - Default Date Year YYYY"
+    },
+    "SDR - DTDZ" : {
+        "prefix": "dma-sdr-dtdz",
+        "body": [
+            "%DTDZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTDZ) - Default Date Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - DTEx" : {
+        "prefix": "dma-sdr-dtex",
+        "body": [
+            "%DTEx",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEx) - End Date (edate=20070101 from command line)"
+    },
+    "SDR - DTEA" : {
+        "prefix": "dma-sdr-dtea",
+        "body": [
+            "%DTEA",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEA) - End Date MMDDYY"
+    },
+    "SDR - DTEB" : {
+        "prefix": "dma-sdr-dteb",
+        "body": [
+            "%DTEB",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEB) - End Date MMDDYYYY"
+    },
+    "SDR - DTED" : {
+        "prefix": "dma-sdr-dted",
+        "body": [
+            "%DTED",
+            "$1"
+        ],
+        "description": "DMA SDR (DTED) - End Date Day DD"
+    },
+    "SDR - DTEI" : {
+        "prefix": "dma-sdr-dtei",
+        "body": [
+            "%DTEI",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEI) - End Date ISO Date YYYYMMDD"
+    },
+    "SDR - DTEJ" : {
+        "prefix": "dma-sdr-dtej",
+        "body": [
+            "%DTEJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEJ) - End Date Sun-Sat"
+    },
+    "SDR - DTEK" : {
+        "prefix": "dma-sdr-dtek",
+        "body": [
+            "%DTEK",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEK) - End Date Saturday-Sunday"
+    },
+    "SDR - DTEM" : {
+        "prefix": "dma-sdr-dtem",
+        "body": [
+            "%DTEM",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEM) - End Date Month MM"
+    },
+    "SDR - DTEO" : {
+        "prefix": "dma-sdr-dteo",
+        "body": [
+            "%DTEO",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEO) - End Date One-based DOW 1-7 (Sun-Sat)"
+    },
+    "SDR - DTEQ" : {
+        "prefix": "dma-sdr-dteq",
+        "body": [
+            "%DTEQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEQ) - End Date MM/DD/YY"
+    },
+    "SDR - DTER" : {
+        "prefix": "dma-sdr-dter",
+        "body": [
+            "%DTER",
+            "$1"
+        ],
+        "description": "DMA SDR (DTER) - End Date YY/MM/DD"
+    },
+    "SDR - DTES" : {
+        "prefix": "dma-sdr-dtes",
+        "body": [
+            "%DTES",
+            "$1"
+        ],
+        "description": "DMA SDR (DTES) - End Date SQL Date MM/DD/YYYY"
+    },
+    "SDR - DTET" : {
+        "prefix": "dma-sdr-dtet",
+        "body": [
+            "%DTET",
+            "$1"
+        ],
+        "description": "DMA SDR (DTET) - End Date YYYY/MM/DD"
+    },
+    "SDR - DTEU" : {
+        "prefix": "dma-sdr-dteu",
+        "body": [
+            "%DTEU",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEU) - End Date MM-DD-YY"
+    },
+    "SDR - DTEV" : {
+        "prefix": "dma-sdr-dtev",
+        "body": [
+            "%DTEV",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEV) - End Date YY-MM-DD"
+    },
+    "SDR - DTEW" : {
+        "prefix": "dma-sdr-dtew",
+        "body": [
+            "%DTEW",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEW) - End Date MM-DD-YYYY"
+    },
+    "SDR - DTEX" : {
+        "prefix": "dma-sdr-dtex",
+        "body": [
+            "%DTEX",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEX) - End Date YYYY-MM-DD"
+    },
+    "SDR - DTEY" : {
+        "prefix": "dma-sdr-dtey",
+        "body": [
+            "%DTEY",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEY) - End Date Year YYYY"
+    },
+    "SDR - DTEZ" : {
+        "prefix": "dma-sdr-dtez",
+        "body": [
+            "%DTEZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTEZ) - End Date Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - DTSx" : {
+        "prefix": "dma-sdr-dtsx",
+        "body": [
+            "%DTSx",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSx) - StartDate (sdate=20070101 from command line)"
+    },
+    "SDR - DTSA" : {
+        "prefix": "dma-sdr-dtsa",
+        "body": [
+            "%DTSA",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSA) - Start Date MMDDYY"
+    },
+    "SDR - DTSB" : {
+        "prefix": "dma-sdr-dtsb",
+        "body": [
+            "%DTSB",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSB) - Start Date MMDDYYYY"
+    },
+    "SDR - DTSD" : {
+        "prefix": "dma-sdr-dtsd",
+        "body": [
+            "%DTSD",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSD) - Start Date Day DD"
+    },
+    "SDR - DTSI" : {
+        "prefix": "dma-sdr-dtsi",
+        "body": [
+            "%DTSI",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSI) - Start Date ISO Date YYYYMMDD"
+    },
+    "SDR - DTSJ" : {
+        "prefix": "dma-sdr-dtsj",
+        "body": [
+            "%DTSJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSJ) - Start Date Sun-Sat"
+    },
+    "SDR - DTSK" : {
+        "prefix": "dma-sdr-dtsk",
+        "body": [
+            "%DTSK",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSK) - Start Date Saturday-Sunday"
+    },
+    "SDR - DTSM" : {
+        "prefix": "dma-sdr-dtsm",
+        "body": [
+            "%DTSM",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSM) - Start Date Month MM"
+    },
+    "SDR - DTSO" : {
+        "prefix": "dma-sdr-dtso",
+        "body": [
+            "%DTSO",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSO) - Start Date One-based DOW 1-7 (Sun-Sat)"
+    },
+    "SDR - DTSQ" : {
+        "prefix": "dma-sdr-dtsq",
+        "body": [
+            "%DTSQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSQ) - Start Date MM/DD/YY"
+    },
+    "SDR - DTSR" : {
+        "prefix": "dma-sdr-dtsr",
+        "body": [
+            "%DTSR",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSR) - Start Date YY/MM/DD"
+    },
+    "SDR - DTSS" : {
+        "prefix": "dma-sdr-dtss",
+        "body": [
+            "%DTSS",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSS) - Start Date SQL Date MM/DD/YYYY"
+    },
+    "SDR - DTST" : {
+        "prefix": "dma-sdr-dtst",
+        "body": [
+            "%DTST",
+            "$1"
+        ],
+        "description": "DMA SDR (DTST) - Start Date YYYY/MM/DD"
+    },
+    "SDR - DTSU" : {
+        "prefix": "dma-sdr-dtsu",
+        "body": [
+            "%DTSU",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSU) - Start Date MM-DD-YY"
+    },
+    "SDR - DTSV" : {
+        "prefix": "dma-sdr-dtsv",
+        "body": [
+            "%DTSV",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSV) - Start Date YY-MM-DD"
+    },
+    "SDR - DTSW" : {
+        "prefix": "dma-sdr-dtsw",
+        "body": [
+            "%DTSW",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSW) - Start Date MM-DD-YYYY"
+    },
+    "SDR - DTSX" : {
+        "prefix": "dma-sdr-dtsx",
+        "body": [
+            "%DTSX",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSX) - Start Date YYYY-MM-DD"
+    },
+    "SDR - DTSY" : {
+        "prefix": "dma-sdr-dtsy",
+        "body": [
+            "%DTSY",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSY) - Start Date Year YYYY"
+    },
+    "SDR - DTSZ" : {
+        "prefix": "dma-sdr-dtsz",
+        "body": [
+            "%DTSZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTSZ) - Start Date Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - DTTA" : {
+        "prefix": "dma-sdr-dtta",
+        "body": [
+            "%DTTA",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTA) - Today's Date MMDDYY"
+    },
+    "SDR - DTTB" : {
+        "prefix": "dma-sdr-dttb",
+        "body": [
+            "%DTTB",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTB) - Today's Date MMDDYYYY"
+    },
+    "SDR - DTTD" : {
+        "prefix": "dma-sdr-dttd",
+        "body": [
+            "%DTTD",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTD) - Today's Date Day DD"
+    },
+    "SDR - DTTI" : {
+        "prefix": "dma-sdr-dtti",
+        "body": [
+            "%DTTI",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTI) - Today's Date ISO Date YYYYMMDD"
+    },
+    "SDR - DTTJ" : {
+        "prefix": "dma-sdr-dttj",
+        "body": [
+            "%DTTJ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTJ) - Today's Date Sun-Sat"
+    },
+    "SDR - DTTK" : {
+        "prefix": "dma-sdr-dttk",
+        "body": [
+            "%DTTK",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTK) - Today's Date Saturday-Sunday"
+    },
+    "SDR - DTTM" : {
+        "prefix": "dma-sdr-dttm",
+        "body": [
+            "%DTTM",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTM) - Today's Date Month MM"
+    },
+    "SDR - DTTO" : {
+        "prefix": "dma-sdr-dtto",
+        "body": [
+            "%DTTO",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTO) - Today's Date One-based DOW 1-7 (Sun-Sat)"
+    },
+    "SDR - DTTQ" : {
+        "prefix": "dma-sdr-dttq",
+        "body": [
+            "%DTTQ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTQ) - Today's Date MM/DD/YY"
+    },
+    "SDR - DTTR" : {
+        "prefix": "dma-sdr-dttr",
+        "body": [
+            "%DTTR",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTR) - Today's Date YY/MM/DD"
+    },
+    "SDR - DTTS" : {
+        "prefix": "dma-sdr-dtts",
+        "body": [
+            "%DTTS",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTS) - Today's Date SQL Date MM/DD/YYYY"
+    },
+    "SDR - DTTT" : {
+        "prefix": "dma-sdr-dttt",
+        "body": [
+            "%DTTT",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTT) - Today's Date YYYY/MM/DD"
+    },
+    "SDR - DTTU" : {
+        "prefix": "dma-sdr-dttu",
+        "body": [
+            "%DTTU",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTU) - Today's Date MM-DD-YY"
+    },
+    "SDR - DTTV" : {
+        "prefix": "dma-sdr-dttv",
+        "body": [
+            "%DTTV",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTV) - Today's Date YY-MM-DD"
+    },
+    "SDR - DTTW" : {
+        "prefix": "dma-sdr-dttw",
+        "body": [
+            "%DTTW",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTW) - Today's Date MM-DD-YYYY"
+    },
+    "SDR - DTTX" : {
+        "prefix": "dma-sdr-dttx",
+        "body": [
+            "%DTTX",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTX) - Today's Date YYYY-MM-DD"
+    },
+    "SDR - DTTY" : {
+        "prefix": "dma-sdr-dtty",
+        "body": [
+            "%DTTY",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTY) - Today's Date Year YYYY"
+    },
+    "SDR - DTTZ" : {
+        "prefix": "dma-sdr-dttz",
+        "body": [
+            "%DTTZ",
+            "$1"
+        ],
+        "description": "DMA SDR (DTTZ) - Today's Date Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - EMLF" : {
+        "prefix": "dma-sdr-emlf",
+        "body": [
+            "%EMLF",
+            "$1"
+        ],
+        "description": "DMA SDR (EMLF) - Default Email (as defined in the Registry From Email)"
+    },
+    "SDR - EMyA" : {
+        "prefix": "dma-sdr-emya",
+        "body": [
+            "%EMyA",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyA) - End Date minus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - EMyB" : {
+        "prefix": "dma-sdr-emyb",
+        "body": [
+            "%EMyB",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyB) - End Date minus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - EMyD" : {
+        "prefix": "dma-sdr-emyd",
+        "body": [
+            "%EMyD",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyD) - End Date minus y days (where y=0-9) Day DD"
+    },
+    "SDR - EMyI" : {
+        "prefix": "dma-sdr-emyi",
+        "body": [
+            "%EMyI",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyI) - End Date minus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - EMyJ" : {
+        "prefix": "dma-sdr-emyj",
+        "body": [
+            "%EMyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyJ) - End Date minus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - EMyK" : {
+        "prefix": "dma-sdr-emyk",
+        "body": [
+            "%EMyK",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyK) - End Date minus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - EMyM" : {
+        "prefix": "dma-sdr-emym",
+        "body": [
+            "%EMyM",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyM) - End Date minus y days (where y=0-9) Month MM"
+    },
+    "SDR - EMyQ" : {
+        "prefix": "dma-sdr-emyq",
+        "body": [
+            "%EMyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyQ) - End Date minus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - EMyR" : {
+        "prefix": "dma-sdr-emyr",
+        "body": [
+            "%EMyR",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyR) - End Date minus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - EMyS" : {
+        "prefix": "dma-sdr-emys",
+        "body": [
+            "%EMyS",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyS) - End Date minus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - EMyT" : {
+        "prefix": "dma-sdr-emyt",
+        "body": [
+            "%EMyT",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyT) - End Date minus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - EMyU" : {
+        "prefix": "dma-sdr-emyu",
+        "body": [
+            "%EMyU",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyU) - End Date minus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - EMyV" : {
+        "prefix": "dma-sdr-emyv",
+        "body": [
+            "%EMyV",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyV) - End Date minus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - EMyW" : {
+        "prefix": "dma-sdr-emyw",
+        "body": [
+            "%EMyW",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyW) - End Date minus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - EMyX" : {
+        "prefix": "dma-sdr-emyx",
+        "body": [
+            "%EMyX",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyX) - End Date minus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - EMyY" : {
+        "prefix": "dma-sdr-emyy",
+        "body": [
+            "%EMyY",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyY) - End Date minus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - EMyZ" : {
+        "prefix": "dma-sdr-emyz",
+        "body": [
+            "%EMyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (EMyZ) - End Date minus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - EPyA" : {
+        "prefix": "dma-sdr-epya",
+        "body": [
+            "%EPyA",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyA) - End Date plus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - EPyB" : {
+        "prefix": "dma-sdr-epyb",
+        "body": [
+            "%EPyB",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyB) - End Date plus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - EPyD" : {
+        "prefix": "dma-sdr-epyd",
+        "body": [
+            "%EPyD",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyD) - End Date plus y days (where y=0-9) Day DD"
+    },
+    "SDR - EPyI" : {
+        "prefix": "dma-sdr-epyi",
+        "body": [
+            "%EPyI",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyI) - End Date plus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - EPyJ" : {
+        "prefix": "dma-sdr-epyj",
+        "body": [
+            "%EPyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyJ) - End Date plus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - EPyK" : {
+        "prefix": "dma-sdr-epyk",
+        "body": [
+            "%EPyK",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyK) - End Date plus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - EPyM" : {
+        "prefix": "dma-sdr-epym",
+        "body": [
+            "%EPyM",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyM) - End Date plus y days (where y=0-9) Month MM"
+    },
+    "SDR - EPyQ" : {
+        "prefix": "dma-sdr-epyq",
+        "body": [
+            "%EPyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyQ) - End Date plus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - EPyR" : {
+        "prefix": "dma-sdr-epyr",
+        "body": [
+            "%EPyR",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyR) - End Date plus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - EPyS" : {
+        "prefix": "dma-sdr-epys",
+        "body": [
+            "%EPyS",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyS) - End Date plus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - EPyT" : {
+        "prefix": "dma-sdr-epyt",
+        "body": [
+            "%EPyT",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyT) - End Date plus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - EPyU" : {
+        "prefix": "dma-sdr-epyu",
+        "body": [
+            "%EPyU",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyU) - End Date plus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - EPyV" : {
+        "prefix": "dma-sdr-epyv",
+        "body": [
+            "%EPyV",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyV) - End Date plus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - EPyW" : {
+        "prefix": "dma-sdr-epyw",
+        "body": [
+            "%EPyW",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyW) - End Date plus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - EPyX" : {
+        "prefix": "dma-sdr-epyx",
+        "body": [
+            "%EPyX",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyX) - End Date plus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - EPyY" : {
+        "prefix": "dma-sdr-epyy",
+        "body": [
+            "%EPyY",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyY) - End Date plus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - EPyZ" : {
+        "prefix": "dma-sdr-epyz",
+        "body": [
+            "%EPyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (EPyZ) - End Date plus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - LINE" : {
+        "prefix": "dma-sdr-line",
+        "body": [
+            "%LINE",
+            "$1"
+        ],
+        "description": "DMA SDR (LINE) - Current Line of input file or Current record being processed"
+    },
+    "SDR - LOGE" : {
+        "prefix": "dma-sdr-loge",
+        "body": [
+            "%LOGE",
+            "$1"
+        ],
+        "description": "DMA SDR (LOGE) - Number of errors logged to the Log file"
+    },
+    "SDR - LOGF" : {
+        "prefix": "dma-sdr-logf",
+        "body": [
+            "%LOGF",
+            "$1"
+        ],
+        "description": "DMA SDR (LOGF) - Current Log file name (without path)"
+    },
+    "SDR - LOGW" : {
+        "prefix": "dma-sdr-logw",
+        "body": [
+            "%LOGW",
+            "$1"
+        ],
+        "description": "DMA SDR (LOGW) - Number of warnings logged to the Log file"
+    },
+    "SDR - PID3" : {
+        "prefix": "dma-sdr-pid3",
+        "body": [
+            "%PID3",
+            "$1"
+        ],
+        "description": "DMA SDR (PID3) - Process Id (last 3-digits)"
+    },
+    "SDR - PID4" : {
+        "prefix": "dma-sdr-pid4",
+        "body": [
+            "%PID4",
+            "$1"
+        ],
+        "description": "DMA SDR (PID4) - Process Id (last 4-digits)"
+    },
+    "SDR - PID5" : {
+        "prefix": "dma-sdr-pid5",
+        "body": [
+            "%PID5",
+            "$1"
+        ],
+        "description": "DMA SDR (PID5) - Process Id (last 5-digits)"
+    },
+    "SDR - PID6" : {
+        "prefix": "dma-sdr-pid6",
+        "body": [
+            "%PID6",
+            "$1"
+        ],
+        "description": "DMA SDR (PID6) - Process Id (last 6-digits)"
+    },
+    "SDR - PID7" : {
+        "prefix": "dma-sdr-pid7",
+        "body": [
+            "%PID7",
+            "$1"
+        ],
+        "description": "DMA SDR (PID7) - Process Id (last 7-digits)"
+    },
+    "SDR - PID8" : {
+        "prefix": "dma-sdr-pid8",
+        "body": [
+            "%PID8",
+            "$1"
+        ],
+        "description": "DMA SDR (PID8) - Process Id (last 8-digits)"
+    },
+    "SDR - PID9" : {
+        "prefix": "dma-sdr-pid9",
+        "body": [
+            "%PID9",
+            "$1"
+        ],
+        "description": "DMA SDR (PID9) - Process Id (last 9-digits)"
+    },
+    "SDR - SDBN" : {
+        "prefix": "dma-sdr-sdbn",
+        "body": [
+            "%SDBN",
+            "$1"
+        ],
+        "description": "DMA SDR (SDBN) - SysConn Database Name (as defined in the registry)"
+    },
+    "SDR - SMyA" : {
+        "prefix": "dma-sdr-smya",
+        "body": [
+            "%SMyA",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyA) - Start Date minus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - SMyB" : {
+        "prefix": "dma-sdr-smyb",
+        "body": [
+            "%SMyB",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyB) - Start Date minus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - SMyD" : {
+        "prefix": "dma-sdr-smyd",
+        "body": [
+            "%SMyD",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyD) - Start Date minus y days (where y=0-9) Day DD"
+    },
+    "SDR - SMyI" : {
+        "prefix": "dma-sdr-smyi",
+        "body": [
+            "%SMyI",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyI) - Start Date minus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - SMyJ" : {
+        "prefix": "dma-sdr-smyj",
+        "body": [
+            "%SMyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyJ) - Start Date minus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - SMyK" : {
+        "prefix": "dma-sdr-smyk",
+        "body": [
+            "%SMyK",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyK) - Start Date minus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - SMyM" : {
+        "prefix": "dma-sdr-smym",
+        "body": [
+            "%SMyM",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyM) - Start Date minus y days (where y=0-9) Month MM"
+    },
+    "SDR - SMyQ" : {
+        "prefix": "dma-sdr-smyq",
+        "body": [
+            "%SMyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyQ) - Start Date minus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - SMyR" : {
+        "prefix": "dma-sdr-smyr",
+        "body": [
+            "%SMyR",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyR) - Start Date minus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - SMyS" : {
+        "prefix": "dma-sdr-smys",
+        "body": [
+            "%SMyS",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyS) - Start Date minus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - SMyT" : {
+        "prefix": "dma-sdr-smyt",
+        "body": [
+            "%SMyT",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyT) - Start Date minus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - SMyU" : {
+        "prefix": "dma-sdr-smyu",
+        "body": [
+            "%SMyU",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyU) - Start Date minus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - SMyV" : {
+        "prefix": "dma-sdr-smyv",
+        "body": [
+            "%SMyV",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyV) - Start Date minus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - SMyW" : {
+        "prefix": "dma-sdr-smyw",
+        "body": [
+            "%SMyW",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyW) - Start Date minus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - SMyX" : {
+        "prefix": "dma-sdr-smyx",
+        "body": [
+            "%SMyX",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyX) - Start Date minus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - SMyY" : {
+        "prefix": "dma-sdr-smyy",
+        "body": [
+            "%SMyY",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyY) - Start Date minus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - SMyZ" : {
+        "prefix": "dma-sdr-smyz",
+        "body": [
+            "%SMyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (SMyZ) - Start Date minus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - SPyA" : {
+        "prefix": "dma-sdr-spya",
+        "body": [
+            "%SPyA",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyA) - Start Date plus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - SPyB" : {
+        "prefix": "dma-sdr-spyb",
+        "body": [
+            "%SPyB",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyB) - Start Date plus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - SPyD" : {
+        "prefix": "dma-sdr-spyd",
+        "body": [
+            "%SPyD",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyD) - Start Date plus y days (where y=0-9) Day DD"
+    },
+    "SDR - SPyI" : {
+        "prefix": "dma-sdr-spyi",
+        "body": [
+            "%SPyI",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyI) - Start Date plus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - SPyJ" : {
+        "prefix": "dma-sdr-spyj",
+        "body": [
+            "%SPyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyJ) - Start Date plus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - SPyK" : {
+        "prefix": "dma-sdr-spyk",
+        "body": [
+            "%SPyK",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyK) - Start Date plus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - SPyM" : {
+        "prefix": "dma-sdr-spym",
+        "body": [
+            "%SPyM",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyM) - Start Date plus y days (where y=0-9) Month MM"
+    },
+    "SDR - SPyQ" : {
+        "prefix": "dma-sdr-spyq",
+        "body": [
+            "%SPyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyQ) - Start Date plus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - SPyR" : {
+        "prefix": "dma-sdr-spyr",
+        "body": [
+            "%SPyR",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyR) - Start Date plus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - SPyS" : {
+        "prefix": "dma-sdr-spys",
+        "body": [
+            "%SPyS",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyS) - Start Date plus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - SPyT" : {
+        "prefix": "dma-sdr-spyt",
+        "body": [
+            "%SPyT",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyT) - Start Date plus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - SPyU" : {
+        "prefix": "dma-sdr-spyu",
+        "body": [
+            "%SPyU",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyU) - Start Date plus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - SPyV" : {
+        "prefix": "dma-sdr-spyv",
+        "body": [
+            "%SPyV",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyV) - Start Date plus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - SPyW" : {
+        "prefix": "dma-sdr-spyw",
+        "body": [
+            "%SPyW",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyW) - Start Date plus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - SPyX" : {
+        "prefix": "dma-sdr-spyx",
+        "body": [
+            "%SPyX",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyX) - Start Date plus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - SPyY" : {
+        "prefix": "dma-sdr-spyy",
+        "body": [
+            "%SPyY",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyY) - Start Date plus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - SPyZ" : {
+        "prefix": "dma-sdr-spyz",
+        "body": [
+            "%SPyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (SPyZ) - Start Date plus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - SSVR" : {
+        "prefix": "dma-sdr-ssvr",
+        "body": [
+            "%SSVR",
+            "$1"
+        ],
+        "description": "DMA SDR (SSVR) - SysConn Server Name (as defined in the registry)"
+    },
+    "SDR - STRx" : {
+        "prefix": "dma-sdr-strx",
+        "body": [
+            "%STRx",
+            "$1"
+        ],
+        "description": "DMA SDR (STRx) - Store Number (store=1 from command line)"
+    },
+    "SDR - STR2" : {
+        "prefix": "dma-sdr-str2",
+        "body": [
+            "%STR2",
+            "$1"
+        ],
+        "description": "DMA SDR (STR2) - Store 2-digit,zero-padded 00"
+    },
+    "SDR - STR3" : {
+        "prefix": "dma-sdr-str3",
+        "body": [
+            "%STR3",
+            "$1"
+        ],
+        "description": "DMA SDR (STR3) - Store 3-digit,zero-padded 000"
+    },
+    "SDR - STR4" : {
+        "prefix": "dma-sdr-str4",
+        "body": [
+            "%STR4",
+            "$1"
+        ],
+        "description": "DMA SDR (STR4) - Store 4-digit,zero-padded 0000"
+    },
+    "SDR - STR5" : {
+        "prefix": "dma-sdr-str5",
+        "body": [
+            "%STR5",
+            "$1"
+        ],
+        "description": "DMA SDR (STR5) - Store 5-digit,zero-padded 00000"
+    },
+    "SDR - STR6" : {
+        "prefix": "dma-sdr-str6",
+        "body": [
+            "%STR6",
+            "$1"
+        ],
+        "description": "DMA SDR (STR6) - Store 6-digit,zero-padded 000000"
+    },
+    "SDR - STR7" : {
+        "prefix": "dma-sdr-str7",
+        "body": [
+            "%STR7",
+            "$1"
+        ],
+        "description": "DMA SDR (STR7) - Store 7-digit,zero-padded 0000000"
+    },
+    "SDR - STR8" : {
+        "prefix": "dma-sdr-str8",
+        "body": [
+            "%STR8",
+            "$1"
+        ],
+        "description": "DMA SDR (STR8) - Store 8-digit,zero-padded 00000000"
+    },
+    "SDR - STR9" : {
+        "prefix": "dma-sdr-str9",
+        "body": [
+            "%STR9",
+            "$1"
+        ],
+        "description": "DMA SDR (STR9) - Store 9-digit,zero-padded 000000000"
+    },
+    "SDR - STRF" : {
+        "prefix": "dma-sdr-strf",
+        "body": [
+            "%STRF",
+            "$1"
+        ],
+        "description": "DMA SDR (STRF) - Store Formatted (based on StorePad Registry variable)"
+    },
+    "SDR - STRU" : {
+        "prefix": "dma-sdr-stru",
+        "body": [
+            "%STRU",
+            "$1"
+        ],
+        "description": "DMA SDR (STRU) - Store Unformated"
+    },
+    "SDR - SUMM" : {
+        "prefix": "dma-sdr-summ",
+        "body": [
+            "%SUMM",
+            "$1"
+        ],
+        "description": "DMA SDR (SUMM) - Monthly Summary flags (as defined in the registry)"
+    },
+    "SDR - SUMQ" : {
+        "prefix": "dma-sdr-sumq",
+        "body": [
+            "%SUMQ",
+            "$1"
+        ],
+        "description": "DMA SDR (SUMQ) - Quarterly Summary flags (as defined in the registry)"
+    },
+    "SDR - SUMW" : {
+        "prefix": "dma-sdr-sumw",
+        "body": [
+            "%SUMW",
+            "$1"
+        ],
+        "description": "DMA SDR (SUMW) - Weekly Summary flags (as defined in the registry)"
+    },
+    "SDR - SUMY" : {
+        "prefix": "dma-sdr-sumy",
+        "body": [
+            "%SUMY",
+            "$1"
+        ],
+        "description": "DMA SDR (SUMY) - Yearly Summary flags (as defined in the registry)"
+    },
+    "SDR - SVRT" : {
+        "prefix": "dma-sdr-svrt",
+        "body": [
+            "%SVRT",
+            "$1"
+        ],
+        "description": "DMA SDR (SVRT) - SvrType (svrtype=CNTRLR from command line)"
+    },
+    "SDR - TIMA" : {
+        "prefix": "dma-sdr-tima",
+        "body": [
+            "%TIMA",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMA) - Current Time HHmm"
+    },
+    "SDR - TIMB" : {
+        "prefix": "dma-sdr-timb",
+        "body": [
+            "%TIMB",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMB) - Current Time HHmmss"
+    },
+    "SDR - TIMC" : {
+        "prefix": "dma-sdr-timc",
+        "body": [
+            "%TIMC",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMC) - Current Time HHmmssff"
+    },
+    "SDR - TIMD" : {
+        "prefix": "dma-sdr-timd",
+        "body": [
+            "%TIMD",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMD) - Current Time yyyyMMddHHmmss"
+    },
+    "SDR - TIME" : {
+        "prefix": "dma-sdr-time",
+        "body": [
+            "%TIME",
+            "$1"
+        ],
+        "description": "DMA SDR (TIME) - Current Time yyyyMMddHHmmssff"
+    },
+    "SDR - TIMF" : {
+        "prefix": "dma-sdr-timf",
+        "body": [
+            "%TIMF",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMF) - Current Fraction of Seconds ff"
+    },
+    "SDR - TIMH" : {
+        "prefix": "dma-sdr-timh",
+        "body": [
+            "%TIMH",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMH) - Current Hour HH"
+    },
+    "SDR - TIMM" : {
+        "prefix": "dma-sdr-timm",
+        "body": [
+            "%TIMM",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMM) - Current Minutes mm"
+    },
+    "SDR - TIMS" : {
+        "prefix": "dma-sdr-tims",
+        "body": [
+            "%TIMS",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMS) - Current Seconds ss"
+    },
+    "SDR - TIMX" : {
+        "prefix": "dma-sdr-timx",
+        "body": [
+            "%TIMX",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMX) - Current Time HH:mm"
+    },
+    "SDR - TIMY" : {
+        "prefix": "dma-sdr-timy",
+        "body": [
+            "%TIMY",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMY) - Current Time HH:mm:ss"
+    },
+    "SDR - TIMZ" : {
+        "prefix": "dma-sdr-timz",
+        "body": [
+            "%TIMZ",
+            "$1"
+        ],
+        "description": "DMA SDR (TIMZ) - Current Time HH:mm:ss.ff"
+    },
+    "SDR - TLCL" : {
+        "prefix": "dma-sdr-tlcl",
+        "body": [
+            "%TLCL",
+            "$1"
+        ],
+        "description": "DMA SDR (TLCL) - Current Value from the tlcl list (blank if list not set)"
+    },
+    "SDR - TMyA" : {
+        "prefix": "dma-sdr-tmya",
+        "body": [
+            "%TMyA",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyA) - Today's Date minus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - TMyB" : {
+        "prefix": "dma-sdr-tmyb",
+        "body": [
+            "%TMyB",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyB) - Today's Date minus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - TMyD" : {
+        "prefix": "dma-sdr-tmyd",
+        "body": [
+            "%TMyD",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyD) - Today's Date minus y days (where y=0-9) Day DD"
+    },
+    "SDR - TMyI" : {
+        "prefix": "dma-sdr-tmyi",
+        "body": [
+            "%TMyI",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyI) - Today's Date minus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - TMyJ" : {
+        "prefix": "dma-sdr-tmyj",
+        "body": [
+            "%TMyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyJ) - Today's Date minus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - TMyK" : {
+        "prefix": "dma-sdr-tmyk",
+        "body": [
+            "%TMyK",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyK) - Today's Date minus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - TMyM" : {
+        "prefix": "dma-sdr-tmym",
+        "body": [
+            "%TMyM",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyM) - Today's Date minus y days (where y=0-9) Month MM"
+    },
+    "SDR - TMyQ" : {
+        "prefix": "dma-sdr-tmyq",
+        "body": [
+            "%TMyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyQ) - Today's Date minus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - TMyR" : {
+        "prefix": "dma-sdr-tmyr",
+        "body": [
+            "%TMyR",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyR) - Today's Date minus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - TMyS" : {
+        "prefix": "dma-sdr-tmys",
+        "body": [
+            "%TMyS",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyS) - Today's Date minus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - TMyT" : {
+        "prefix": "dma-sdr-tmyt",
+        "body": [
+            "%TMyT",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyT) - Today's Date minus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - TMyU" : {
+        "prefix": "dma-sdr-tmyu",
+        "body": [
+            "%TMyU",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyU) - Today's Date minus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - TMyV" : {
+        "prefix": "dma-sdr-tmyv",
+        "body": [
+            "%TMyV",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyV) - Today's Date minus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - TMyW" : {
+        "prefix": "dma-sdr-tmyw",
+        "body": [
+            "%TMyW",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyW) - Today's Date minus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - TMyX" : {
+        "prefix": "dma-sdr-tmyx",
+        "body": [
+            "%TMyX",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyX) - Today's Date minus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - TMyY" : {
+        "prefix": "dma-sdr-tmyy",
+        "body": [
+            "%TMyY",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyY) - Today's Date minus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - TMyZ" : {
+        "prefix": "dma-sdr-tmyz",
+        "body": [
+            "%TMyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (TMyZ) - Today's Date minus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - TPyA" : {
+        "prefix": "dma-sdr-tpya",
+        "body": [
+            "%TPyA",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyA) - Today's Date plus y days (where y=0-9) MMDDYY"
+    },
+    "SDR - TPyB" : {
+        "prefix": "dma-sdr-tpyb",
+        "body": [
+            "%TPyB",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyB) - Today's Date plus y days (where y=0-9) MMDDYYYY"
+    },
+    "SDR - TPyD" : {
+        "prefix": "dma-sdr-tpyd",
+        "body": [
+            "%TPyD",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyD) - Today's Date plus y days (where y=0-9) Day DD"
+    },
+    "SDR - TPyI" : {
+        "prefix": "dma-sdr-tpyi",
+        "body": [
+            "%TPyI",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyI) - Today's Date plus y days (where y=0-9) ISO Date YYYYMMDD"
+    },
+    "SDR - TPyJ" : {
+        "prefix": "dma-sdr-tpyj",
+        "body": [
+            "%TPyJ",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyJ) - Today's Date plus y days (where y=0-9) Sun-Sat"
+    },
+    "SDR - TPyK" : {
+        "prefix": "dma-sdr-tpyk",
+        "body": [
+            "%TPyK",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyK) - Today's Date plus y days (where y=0-9) Saturday-Sunday"
+    },
+    "SDR - TPyM" : {
+        "prefix": "dma-sdr-tpym",
+        "body": [
+            "%TPyM",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyM) - Today's Date plus y days (where y=0-9) Month MM"
+    },
+    "SDR - TPyQ" : {
+        "prefix": "dma-sdr-tpyq",
+        "body": [
+            "%TPyQ",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyQ) - Today's Date plus y days (where y=0-9) MM/DD/YY"
+    },
+    "SDR - TPyR" : {
+        "prefix": "dma-sdr-tpyr",
+        "body": [
+            "%TPyR",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyR) - Today's Date plus y days (where y=0-9) YY/MM/DD"
+    },
+    "SDR - TPyS" : {
+        "prefix": "dma-sdr-tpys",
+        "body": [
+            "%TPyS",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyS) - Today's Date plus y days (where y=0-9) SQL Date MM/DD/YYYY"
+    },
+    "SDR - TPyT" : {
+        "prefix": "dma-sdr-tpyt",
+        "body": [
+            "%TPyT",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyT) - Today's Date plus y days (where y=0-9) YYYY/MM/DD"
+    },
+    "SDR - TPyU" : {
+        "prefix": "dma-sdr-tpyu",
+        "body": [
+            "%TPyU",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyU) - Today's Date plus y days (where y=0-9) MM-DD-YY"
+    },
+    "SDR - TPyV" : {
+        "prefix": "dma-sdr-tpyv",
+        "body": [
+            "%TPyV",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyV) - Today's Date plus y days (where y=0-9) YY-MM-DD"
+    },
+    "SDR - TPyW" : {
+        "prefix": "dma-sdr-tpyw",
+        "body": [
+            "%TPyW",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyW) - Today's Date plus y days (where y=0-9) MM-DD-YYYY"
+    },
+    "SDR - TPyX" : {
+        "prefix": "dma-sdr-tpyx",
+        "body": [
+            "%TPyX",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyX) - Today's Date plus y days (where y=0-9) YYYY-MM-DD"
+    },
+    "SDR - TPyY" : {
+        "prefix": "dma-sdr-tpyy",
+        "body": [
+            "%TPyY",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyY) - Today's Date plus y days (where y=0-9) Year YYYY"
+    },
+    "SDR - TPyZ" : {
+        "prefix": "dma-sdr-tpyz",
+        "body": [
+            "%TPyZ",
+            "$1"
+        ],
+        "description": "DMA SDR (TPyZ) - Today's Date plus y days (where y=0-9) Zero-based DOW 0-6 (Sun-Sat)"
+    },
+    "SDR - TSKC" : {
+        "prefix": "dma-sdr-tskc",
+        "body": [
+            "%TSKC",
+            "$1"
+        ],
+        "description": "DMA SDR (TSKC) - Current Task Name (set by dmBuilder)"
+    },
+    "SDR - TSKN" : {
+        "prefix": "dma-sdr-tskn",
+        "body": [
+            "%TSKN",
+            "$1"
+        ],
+        "description": "DMA SDR (TSKN) - Task Name udr for conditional naming of a task (\"tskn\" udr from command line)"
+    },
+    "SDR - UDLN" : {
+        "prefix": "dma-sdr-udln",
+        "body": [
+            "%UDLN",
+            "$1"
+        ],
+        "description": "DMA SDR (UDLN) - Name of the current udl list"
+    },
+    "SDR - UDLT" : {
+        "prefix": "dma-sdr-udlt",
+        "body": [
+            "%UDLT",
+            "$1"
+        ],
+        "description": "DMA SDR (UDLT) - Count of the list detail records"
+    },
+    "SDR - UDLX" : {
+        "prefix": "dma-sdr-udlx",
+        "body": [
+            "%UDLX",
+            "$1"
+        ],
+        "description": "DMA SDR (UDLX) - Value Index of the current udl list (-1 if no list is active)"
+    },
+    "SDR - VEND" : {
+        "prefix": "dma-sdr-vend",
+        "body": [
+            "%VEND",
+            "$1"
+        ],
+        "description": "DMA SDR (VEND) - Value of the vendor udr (from the command line)"
+    },
+    "SDR - VIS7" : {
+        "prefix": "dma-sdr-vis7",
+        "body": [
+            "%VIS7",
+            "$1"
+        ],
+        "description": "DMA SDR (VIS7) - 7-day Vis Install (1 if 7-day VIS or 0 if not)"
+    },
+    "SDX - ATON" : {
+        "prefix": "dma-sdr-aton",
+        "body": [
+            ",-6",
+            "$1"
+        ],
+        "description": "DMA SDX (ATON): Convert an Alpha Numeric string to a null string (used for alphas in num fields)"
+    },
+    "SDX - BCDE" : {
+        "prefix": "dma-sdr-bcde",
+        "body": [
+            ",-32",
+            "$1"
+        ],
+        "description": "DMA SDX (BCDE): Convert to an Azalea Barcode"
+    },
+    "SDX - CKDA" : {
+        "prefix": "dma-sdr-ckda",
+        "body": [
+            ",-37",
+            "$1"
+        ],
+        "description": "DMA SDX (CKDA): Calculate and Append Check Digit"
+    },
+    "SDX - CKDR" : {
+        "prefix": "dma-sdr-ckdr",
+        "body": [
+            ",-38",
+            "$1"
+        ],
+        "description": "DMA SDX (CKDR): Calculate and Return Check Digit"
+    },
+    "SDX - CRPT" : {
+        "prefix": "dma-sdr-crpt",
+        "body": [
+            ",-52",
+            "$1"
+        ],
+        "description": "DMA SDX (CRPT): Use DMA encryption to encrypt string"
+    },
+    "SDX - DAYI" : {
+        "prefix": "dma-sdr-dayi",
+        "body": [
+            ",-19",
+            "$1"
+        ],
+        "description": "DMA SDX (DAYI): Format Date as DayId from Day dimension (-1 if no Day Id is found)"
+    },
+    "SDX - DBNL" : {
+        "prefix": "dma-sdr-dbnl",
+        "body": [
+            ",-2",
+            "$1"
+        ],
+        "description": "DMA SDX (DBNL): Convert a Null string ('') to a SQL Null (Null)"
+    },
+    "SDX - DCML" : {
+        "prefix": "dma-sdr-dcml",
+        "body": [
+            ",-11",
+            "$1"
+        ],
+        "description": "DMA SDX (DCML): Add Decimal with 2 digits on left-side (e.g. '1000' becomes '10.00')"
+    },
+    "SDX - DEOR" : {
+        "prefix": "dma-sdr-deor",
+        "body": [
+            ",-17",
+            "$1"
+        ],
+        "description": "DMA SDX (DEOR): Removes EOR character (deletes last character in the string)"
+    },
+    "SDX - EIDQ" : {
+        "prefix": "dma-sdr-eidq",
+        "body": [
+            ",-47",
+            "$1"
+        ],
+        "description": "DMA SDX (EIDQ): Enclose in Double Quotes "
+    },
+    "SDX - EISQ" : {
+        "prefix": "dma-sdr-eisq",
+        "body": [
+            ",-36",
+            "$1"
+        ],
+        "description": "DMA SDX (EISQ): Enclose in Single Quotes"
+    },
+    "SDX - FDTI" : {
+        "prefix": "dma-sdr-fdti",
+        "body": [
+            ",-10",
+            "$1"
+        ],
+        "description": "DMA SDX (FDTI): Format Date as 'yyyymmdd' (invalid dates are set to '12/31/9999')"
+    },
+    "SDX - FDTS" : {
+        "prefix": "dma-sdr-fdts",
+        "body": [
+            ",-9",
+            "$1"
+        ],
+        "description": "DMA SDX (FDTS): Format Date as 'mm/dd/yyyy' (invalid dates are set to '12/31/9999')"
+    },
+    "SDX - FMTD" : {
+        "prefix": "dma-sdr-fmtd",
+        "body": [
+            ",-18",
+            "$1"
+        ],
+        "description": "DMA SDX (FMTD): Format Date or string with single quotes around it, or SQL NULL if null"
+    },
+    "SDX - LINE" : {
+        "prefix": "dma-sdr-line",
+        "body": [
+            ",-14",
+            "$1"
+        ],
+        "description": "DMA SDX (LINE): Return current line # of input file or current record # of extract sql"
+    },
+    "SDX - LOWR" : {
+        "prefix": "dma-sdr-lowr",
+        "body": [
+            ",-16",
+            "$1"
+        ],
+        "description": "DMA SDX (LOWR): Convert to lowercase"
+    },
+    "SDX - LTOS" : {
+        "prefix": "dma-sdr-ltos",
+        "body": [
+            ",-35",
+            "$1"
+        ],
+        "description": "DMA SDX (LTOS): Convert Long FilePath to Short"
+    },
+    "SDX - NBSP" : {
+        "prefix": "dma-sdr-nbsp",
+        "body": [
+            ",-20",
+            "$1"
+        ],
+        "description": "DMA SDX (NBSP): Convert a Null String ('') to a '&nbsp;'"
+    },
+    "SDX - NEG1" : {
+        "prefix": "dma-sdr-neg1",
+        "body": [
+            ",-5",
+            "$1"
+        ],
+        "description": "DMA SDX (NEG1): Convert a Null string ('') to a negative one (-1)"
+    },
+    "SDX - NLDB" : {
+        "prefix": "dma-sdr-nldb",
+        "body": [
+            ",-44",
+            "$1"
+        ],
+        "description": "DMA SDX (NLDB): Set the field to a SQL DB Null (NULL)"
+    },
+    "SDX - NLST" : {
+        "prefix": "dma-sdr-nlst",
+        "body": [
+            ",-45",
+            "$1"
+        ],
+        "description": "DMA SDX (NLST): Set the field to a Null String ('')"
+    },
+    "SDX - NONP" : {
+        "prefix": "dma-sdr-nonp",
+        "body": [
+            ",-42",
+            "$1"
+        ],
+        "description": "DMA SDX (NONP): Removes non printable chars"
+    },
+    "SDX - NORB" : {
+        "prefix": "dma-sdr-norb",
+        "body": [
+            ",-21",
+            "$1"
+        ],
+        "description": "DMA SDX (NORB): Prefix with a '<BR>' string (Converts Null String to a '&nbsp;')"
+    },
+    "SDX - NTOD" : {
+        "prefix": "dma-sdr-ntod",
+        "body": [
+            ",-12",
+            "$1"
+        ],
+        "description": "DMA SDX (NTOD): Format Date as 'mm/dd/yyyy' (invalid dates set to today - 'mm/dd/yyyy')"
+    },
+    "SDX - PMLT" : {
+        "prefix": "dma-sdr-pmlt",
+        "body": [
+            ",-8",
+            "$1"
+        ],
+        "description": "DMA SDX (PMLT): Convert Null string ('') or zero to a 1 (Valid Price Multiple)"
+    },
+    "SDX - PRCM" : {
+        "prefix": "dma-sdr-prcm",
+        "body": [
+            ",-33",
+            "$1"
+        ],
+        "description": "DMA SDX (PRCM): Price Multiple part of a Multiple/Price string"
+    },
+    "SDX - PRCP" : {
+        "prefix": "dma-sdr-prcp",
+        "body": [
+            ",-34",
+            "$1"
+        ],
+        "description": "DMA SDX (PRCP): Price part of a Multiple/Price string"
+    },
+    "SDX - QUTE" : {
+        "prefix": "dma-sdr-qute",
+        "body": [
+            ",-13",
+            "$1"
+        ],
+        "description": "DMA SDX (QUTE): Replace all single quotes with 2 single quotes"
+    },
+    "SDX - SEQA" : {
+        "prefix": "dma-sdr-seqa",
+        "body": [
+            ",-48",
+            "$1"
+        ],
+        "description": "DMA SDX (SEQA): Sequence Number A (initializes start value from field value or 1 if value is alpha)"
+    },
+    "SDX - SEQB" : {
+        "prefix": "dma-sdr-seqb",
+        "body": [
+            ",-49",
+            "$1"
+        ],
+        "description": "DMA SDX (SEQB): Sequence Number B (initializes start value from field value or 1 if value is alpha)"
+    },
+    "SDX - SEQC" : {
+        "prefix": "dma-sdr-seqc",
+        "body": [
+            ",-50",
+            "$1"
+        ],
+        "description": "DMA SDX (SEQC): Sequence Number C (initializes start value from field value or 1 if value is alpha)"
+    },
+    "SDX - SSPC" : {
+        "prefix": "dma-sdr-sspc",
+        "body": [
+            ",-51",
+            "$1"
+        ],
+        "description": "DMA SDX (SSPC): Convert a Null string ('') to a Single Space ' ' (use this to prevent BULK INSERT from inserting NULL)"
+    },
+    "SDX - STOB" : {
+        "prefix": "dma-sdr-stob",
+        "body": [
+            ",-43",
+            "$1"
+        ],
+        "description": "DMA SDX (STOB): String to Bit (YES/TRUE/ON/Y/1 to 1 and NO/FALSE/OFF/N/0 to 0)"
+    },
+    "SDX - TRIM" : {
+        "prefix": "dma-sdr-trim",
+        "body": [
+            ",-1",
+            "$1"
+        ],
+        "description": "DMA SDX (TRIM): Trims spaces from left and right"
+    },
+    "SDX - UPPR" : {
+        "prefix": "dma-sdr-uppr",
+        "body": [
+            ",-15",
+            "$1"
+        ],
+        "description": "DMA SDX (UPPR): Convert to uppercase"
+    },
+    "SDX - UNTS" : {
+        "prefix": "dma-sdr-unts",
+        "body": [
+            ",-40",
+            "$1"
+        ],
+        "description": "DMA SDX (UNTS): Cleanse Unit field (removes whitespace, alpha chars and non printable chars)"
+    },
+    "SDX - XDTE" : {
+        "prefix": "dma-sdr-xdte",
+        "body": [
+            ",-4",
+            "$1"
+        ],
+        "description": "DMA SDX (XDTE): Convert a Null string ('') to '12/31/9999'"
+    },
+    "SDX - XMLE" : {
+        "prefix": "dma-sdr-xmle",
+        "body": [
+            ",-41",
+            "$1"
+        ],
+        "description": "DMA SDX (XMLE): Encode XML characters (e.g. &lt; &gt; &amp; &apos; &quot;)"
+    },
+    "SDX - YORN" : {
+        "prefix": "dma-sdr-yorn",
+        "body": [
+            ",-46",
+            "$1"
+        ],
+        "description": "DMA SDX (YORN): Return Y if value is 1 else return N"
+    },
+    "SDX - ZERO" : {
+        "prefix": "dma-sdr-zero",
+        "body": [
+            ",-3",
+            "$1"
+        ],
+        "description": "DMA SDX (ZERO): Convert a Null string ('') to zero (0)"
+    },
+    "TSK - Begin/End" : {
+        "prefix": "dma-tsk-begin-end",
+        "body": [
+            "BEG taskname,[transflag],[warnovrd]",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - Begin/End New Task"
+    },
+    "TSK - Condition" : {
+        "prefix": "dma-tsk-cnd",
+        "body": [
+            "CND VB_Condition",
+            "$1"
+        ],
+        "description": "DMA TSK - Visual Basic condition for running task"
+    },
+    "TSK - Extract Parameters" : {
+        "prefix": "dma-tsk-extract-params",
+        "body": [
+            "EPM paramstring",
+            "***EXR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Extract parameters (used to provide additional parameters"
+    },
+    "TSK - Define Extract SQL" : {
+        "prefix": "dma-tsk-define-extract-sql",
+        "body": [
+            "EXT extract_sql",
+            "***EXR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Define Extract (SELECT) SQL"
+    },
+    "TSK - Define Import/Export File Attributes" : {
+        "prefix": "dma-tsk-define-import-export-file-attributes",
+        "body": [
+            "***",
+            "*** \n,<CRLF>,<COMMA>,<SPACE> or <TAB> instead of actual character for fieldseparator,RecordPrefix,RecordSuffix and/or RecordSeparator",
+            "***",
+            "FIL filename,[filetype],[fieldseparator],[HasHeader],[HasFooter],[RecordPrefix],[RecordSuffix],[RecordSeparator],[RecordNewline]",
+            "***FIR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Define Import/Export File Attributes"
+    },
+    "TSK - Define Field Map" : {
+        "prefix": "dma-tsk-define-field-map",
+        "body": [
+            "FLD csv_fldmap",
+            "$1"
+        ],
+        "description": "DMA TSK - Define Field Map"
+    },
+    "TSK - Define HTML Footer" : {
+        "prefix": "dma-tsk-define-html-footer",
+        "body": [
+            "FTR footer",
+            "***HFR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Define HTML Footer"
+    },
+    "TSK - Define HTML Header" : {
+        "prefix": "dma-tsk-define-html-header",
+        "body": [
+            "HDR header",
+            "***HFR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Define HTML Header"
+    },
+    "TSK - Define Load (INSERT) SQL or HTML Record Format" : {
+        "prefix": "dma-tsk-define-load-sql-html",
+        "body": [
+            "LOA load_sql",
+            "***LOR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Define Load (INSERT) SQL or HTML Record Format"
+    },
+    "TSK - Load Parameters" : {
+        "prefix": "dma-tsk-load-params",
+        "body": [
+            "LPM paramstring",
+            "***lXR csv_udrsdr_list",
+            "$1"
+        ],
+        "description": "DMA TSK - Load parameters (used to provide additional parameters)"
+    },
+    "TSK - Define Define Record Id Field" : {
+        "prefix": "dma-tsk-rid",
+        "body": [
+            "***",
+            "*** If you are parsing the records to another file, you can set the LOA field ",
+            "*** to a \"*\" and the FLD field to 0 and the entire record will be written to the",
+            "*** parsed file.",
+            "***",
+            "RID all,fldid,fldvalue,[funcid],[funcvalue]",
+            "$1"
+        ],
+        "description": "DMA TSK - RID: Define Record Id Field (used to split file)"
+    },
+    "TSK - SDX/UDX Transformations" : {
+        "prefix": "dma-tsk-transformations",
+        "body": [
+            "SDX",
+            "$1"
+        ],
+        "description": "DMA TSK - List of SDX/UDX transformation for a single field"
+    },
+    "TSK - ALI" : {
+        "prefix": "dma-tsk-ali",
+        "body": [
+            "***",
+            "*** If the transaction flag is true, then EPM will be used to update the DMA_Status table",
+            "*** See DMA_Alerts for LPM values",
+            "*** See DMA_Status table for EPM values",
+            "***",
+            "BEG ALI_TASKNAME,no",
+            "LPM Alert Class,Alert Id",
+            "***EPM StatusClass,StatusType,Status",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - ALI: Generate an Alert Instance for the given Alert Class/ID"
+    },
+    "TSK - ALN" : {
+        "prefix": "dma-tsk-aln",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to replace whitespace with the field separator",
+            "*** Set the reload flag to NO if you do NOT want to add line numbers (just doing string replacements)",
+            "*** If the filetype is 894",
+            "***\t+ The EDI 894 file into separate edi files",
+            "***\t+ The reload filename will be used for new/split invoice filenames",
+            "***\t\t- Use %861 in filename for Invoice",
+            "***\t\t- Use %862 in filename for Store Number",
+            "***\t\t- Use %cnt in filename for Count",
+            "***",
+            "BEG ALN_TASKNAME,no",
+            "EXT path to look in for the file",
+            "***EPM semi-colon list of replacement strings in the (name1=value1;name2=value2)",
+            "FIL filename,[filetype],[fieldseparator]",
+            "REL isreload,fnameorsuffix",
+            "END",
+            "$1"
+        ],
+        "description": "DMA TSK - ALN: Add Line Numbers to a file or replace strings in a file - writes output to reload file"
+    },
+    "TSK - C1I" : {
+        "prefix": "dma-tsk-C1I",
+        "body": [
+            "***",
+            "*** Set the transaction flag is true to add a index to the Connection udr (e.g. cs0, cs1)",
+            "*** Set the transaction flag is true to add a index to the RecordSource udr (e.g. RS0, RS1)",
+            "*** NOTE: If RecordSource and/or ConnectionString already starts with specified",
+            "***\tUDR name, then NO replacement will be made.",
+            "***",
+            "BEG C1I_TASKNAME,no",
+            "EXT RecordSource UDR name",
+            "LOA ConnectionString UDR name",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - C1I: Initialize the ConnectionString and/or RecordSource to a DMA Udr"
+    },
+    "TSK - C1L" : {
+        "prefix": "dma-tsk-c1l",
+        "body": [
+            "***",
+            "*** NOTE: The LPM expects 2 integer parameters. The first parameter (rptidx) is the index (0 based) of ",
+            "***\tthe Master Report.This will be used to get the Master C1 Report Name from the XML file (instead of ",
+            "***\tusing what was on the LOA line). You can use -1 for the rptidx if you do NOT want to override the ",
+            "***\treport name specified in the LOA sttribute. ",
+            "*** ",
+            "***\tThe second parameter (connstrflg) specifies which ConnectionStrings will be replaced. ",
+            "***\tUse one of the following for the connstrflg parameter:",
+            "*** ",
+            "***\t0\tReplace NO ConnectionStrings",
+            "***\t1\tReplace Master Report ConnectionString",
+            "***\t2\tReplace ALL ConnectionStrings",
+            "***",
+            "***\tThe transaction flag is ignored",
+            "***",
+            "BEG C1L_TASKNAME,no",
+            "LOA Master C1 Report Name (in XML file)",
+            "FIL = Path and Name of XML File",
+            "END",
+            "$1"
+        ],
+        "description": "DMA TSK - C1L: Loads a Component One Report and replaces the connection string udr"
+    },
+    "TSK - C1P" : {
+        "prefix": "dma-tsk-c1p",
+        "body": [
+            "***",
+            "*** NOTE: the appropriate suffix will automatically be appended to the file, so you do ",
+            "***\tNOT need to have a suffix on the output file.",
+            "***",
+            "*** Valid output types (used in LOA attribute)",
+            "***\tHTM:HTML document (.htm)",
+            "***\tPDF: PDF (.pdf)",
+            "***\tPDFE: PDF with embedded fonts (.pdf)",
+            "***\tPDFP: Protected PDF generated with random pwd can be opened/printed (.pdf)",
+            "***\tPRINT: Sent to default printer",
+            "***\tRTF: RTF file (.rtf)",
+            "***\tTIFF: TIFF file (.tiff)",
+            "***\tTXT: Text file (.txt)",
+            "***\tXLS: Microsoft Excel (.xls)",
+            "***\tXML: Open XML (.xlsx)",
+            "***",
+            "BEG C1P_TASKNAME,no",
+            "***EXT Custom Page Height,Width (in inches)",
+            "LOA comma separated list of filetypes",
+            "***LPM Printer name (used to override the printer specified in the registry)",
+            "***EPM Paper Source - index into paper sources 0..n (used to override the papersource specified in the registry)",
+            "FIL Path and Name of output file (without filetype suffix)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - C1P: Prints a Component One Report to one or more output types"
+    },
+    "TSK - C1R" : {
+        "prefix": "dma-tsk-c1r",
+        "body": [
+            "***",
+            "*** If the transaction flag is true, then the EXT string will be printed to the log",
+            "*** If the Reload flag is True then skip (DO NOT perform) XML encoding on the EXT string",
+            "*** NOTE: The XML encoding is used to encode \"reserved\" XML charaters (e.g. <,>, etc.) so that the",
+            "***\tXML parser will NOT interpret them. Setting the Reload flag to true will prevent the encoding.",
+            "***",
+            "BEG C1R_TASKNAME,no",
+            "EXT SQL string or other replacement string (e.g. fieldname for sorting)",
+            "LOA udr to be replaced (e.g. %RS, %RS1, %RS2)",
+            "***PVT SQL for selecting list of Pivot Columns (CrossTab)",
+            "***PPM Pivot parameters (PIVOT_FLD, PIVOT_VALUE and optional CONNNAME)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - C1R: Replaces a variable in a Component One Report (used with Record Source, Sorting/Grouping, etc.)"
+    },
+    "TSK - CFS" : {
+        "prefix": "dma-tsk-cfs",
+        "body": [
+            "***",
+            "BEG CFS_TASKNAME,no",
+            "EXT string or concatenated string (udr value)",
+            "LOA key path relative to the root (i.e. SharedDefs)",
+            "FIL Key Name",
+            "***LPM The type of registry key (String,DWord,QWord) Defaults to String",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - CFS: Update a configuration value in the registry or a config file, depending on the active configuration"
+    },
+    "TSK - CNT" : {
+        "prefix": "dma-tsk-cnt",
+        "body": [
+            "***",
+            "BEG CNT_TASKNAME,no",
+            "EXT number used to set or increment count",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "***LOA +, - or tells to add, subtract or set qty (default/invalid assumes to be equal sign)",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - CNT: Adds, Subtracts or Sets a user Count"
+    },
+    "TSK - CPD" : {
+        "prefix": "dma-tsk-cpd",
+        "body": [
+            "***",
+            "*** Set the transaction flag (to yes) to remove 'from path' (if successfully copied)",
+            "*** Set the reload flag (to yes) to recursively delete 'to path' before running copy",
+            "***",
+            "BEG CPD_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "LOA path to copy the file(s) to",
+            "FIL name of file(s) to copy",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - CPD: Copies or Moves a directory and all it's files and folders"
+    },
+    "TSK - CPY" : {
+        "prefix": "dma-tsk-cpy",
+        "body": [
+            "***",
+            "*** The transaction flag is ignored",
+            "*** NOTE: set the filetype of the FIL attribute to L (List) if the filename is a DMA User-defined list",
+            "*** ",
+            "BEG CPY_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "LOA path to copy the file(s) to",
+            "FIL name of file(s) to copy (NOTE: this can be a single filename, file mask or a |-separated list of file names/masks)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - CPY: Copy a file or set of files DEPRECATED - USE REN INSTEAD OF THIS TASK TYPE"
+    },
+    "TSK - DAY" : {
+        "prefix": "dma-tsk-day",
+        "body": [
+            "***",
+            "*** Set the Reload Flag to yes to to use registry defaults (else the DataShip file is used)",
+            "***",
+            "BEG DAY_TASKNAME,no",
+            "LOA INSERT SQL command",
+            "FIL Calendar File Name (required if REL is no)",
+            "***REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DAY: Builds a DMA day dimension table"
+    },
+    "TSK - DEL" : {
+        "prefix": "dma-tsk-del",
+        "body": [
+            "***",
+            "*** The transaction flag is ignored",
+            "*** Set the Reload flag to yes to delete matching files in all sub-directories",
+            "***",
+            "*** NOTE: set the filetype of the FIL attribute to L (List) if the filename is a DMA User-defined list",
+            "*** ",
+            "*** DATE NOTE: The LOA parameter should be a number and an optional qualifier. The qualifier determines what",
+            "***\ttime period (D=days, N=months, Y=years, H=hours, M=minutes or S=seconds) will be used when comparing",
+            "***\tthe file date/time with the system date/time. If no qualifier is specified, then D=days will be used (see",
+            "***\texamples below).",
+            "*** ",
+            "***\t5\tolder than 5 days",
+            "***\t5D\tolder than 5 days",
+            "***\t1Y\tolder than 1 Year",
+            "*** ",
+            "BEG DEL_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "***LOA Date Compare Offset - delete file only if older than the specified offset (see DATE NOTE below)",
+            "***LPM Date type used for Compare (C=Created, M=Modified (default), A=Accessed) ",
+            "FIL name of file(s) to delete (NOTE: this can be a single filename, file mask or a |-separated list of file names/masks)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DEL: Deletes a file or set of files"
+    },
+    "TSK - DFT" : {
+        "prefix": "dma-tsk-dft",
+        "body": [
+            "***",
+            "BEG DFT_TASKNAME,no",
+            "EXT Extract SQL command",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DFT: Document field types (DEBUG - prints field type for each field in select)"
+    },
+    "TSK - DMB" : {
+        "prefix": "dma-tsk-dmb",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes then wait for exe to finish",
+            "*** Set the reload flag to show the CMD window",
+            "*** NOTE: UseShellExecute=[true]|false and LoadUserProfile=true|[false]. ",
+            "***\tUserName,Password and Domain are used to run process as a certain user.",
+            "***",
+            "BEG DMB_TASKNAME,no",
+            "LOA command line parameters to pass to dmbuilder",
+            "***LPM UseShellExecute,LoadUserProfile,UserName,Password,Domain",
+            "***REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DMB: Run a dmBuilder TLF or TLC"
+    },
+    "TSK - DNN" : {
+        "prefix": "dma-tsk-dnn",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if you want to connect via IP address (instead of ServerName)",
+            "*** DNN functions available in the LPM attribute",
+            "***\t- SYNC\tSynchronized the file system (files and folders) for the specified portal",
+            "***\t- ADMIN\tSets the following Udrs: admid, admuname, admrid and admrname",
+            "***\t- INSIR\tRuns the DNN InstallResources (e.g. http://localhost/install/install.aspx?mode=InstallResources) ",
+            "*** ",
+            "***\tNOTE: If the LOA value is NOT found in the DMA_Servers table it will be used as the Baase Url address",
+            "*** ",
+            "BEG DNN_TASKNAME,no",
+            "LOA ConnName in DMA_Servers or Base Url address (without the http://)",
+            "LPM DNN function (see above)",
+            "***EPM PortalId",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DNN: Make a DNN WebService Call"
+    },
+    "TSK - DXF" : {
+        "prefix": "dma-tsk-dxf",
+        "body": [
+            "*** ",
+            "***\tEXT = <optional> Exclude/Include SQL - Should return and Integer > 0 to include in send ",
+            "***\t\tNOTE: The following replacements can be used in the EXT attribute: %DXFS (store number), %DXFF (filename)",
+            "***\tLOA = the ConnName of Data Exchange Server (should be setup in the DMA_Servers)",
+            "***\tLPM = <optional> startpos,size,skipnosvr",
+            "***\tFIL = <local/remote> filemask",
+            "***\tHDR = <local> full path or DataExch subdir; ",
+            "***\tFTR = <remote> full path or DataExch subdir ",
+            "***",
+            "***\t* Use the LPM parameter if the store number is part of the filename and the LOA has %STRU replacement",
+            "***\t- starpos and size are used in filename substring (get store from filename)",
+            "***\t- if skipnosvr > 0 then the file send will be skipped if DataExch server is not setup",
+            "***\t\t0 = Log Error",
+            "***\t\t1 = don't send, no logging",
+            "***\t\t2 = don't send, log info",
+            "***\t\t3 = don't send, log warning",
+            "***\t* The DataExch directory (from registry) will be used if the HDR or FTR paths are NOT set",
+            "***\t* The local file will automatically be deleted if the send is successful (see reload flag below)",
+            "*** ",
+            "***\t\tSet the transaction flag to yes if you want to log each filename that was sent",
+            "***\t\tSet the reload flag to yes to \"prevent delete\" of the local file on a successful send",
+            "***",
+            "BEG DXF_TASKNAME,no",
+            "***EXT Exclude/Include SQL - Should return and Integer > 0 to include in send ",
+            "LOA The ConnName of Data Exchange Server (should be setup in the DMA_Servers)",
+            "***LPM startpos,size,skipnosvr,createlist",
+            "FIL local/remote filemask",
+            "HDR local full path or DataExch subdir ",
+            "FTR remote full path or DataExch subdir ",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DXF: Data Exchange Send files in a Directory"
+    },
+    "TSK - DXH" : {
+        "prefix": "dma-tsk-dxh",
+        "body": [
+            "BEG DXH_TASKNAME,no",
+            "LOA URL Suffix (/item/%upcean)",
+            "LPM HTTP Verb (PUT, POST, GET, DELETE, HEAD)",
+            "HDR Http Content Headers (name1=value1|name2=value2;)",
+            "FTR Http Timeout (HH,MM,SS) - defaults to 2 minutes if not specified",
+            "EPM Http Headers (name1=value1|name2=value2;)",
+            "EXT hard coded content to send.  Overrides FIL.",
+            "FIL content to send",
+            "REL yes,receiving content",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DXH: Data Exchange Http Request"
+    },
+    "TSK - DXS Data Set" : {
+        "prefix": "dma-tsk-dxs-data-set",
+        "body": [
+            "***",
+            "*** The EPM params are used by the Data Exchange StartTransmission Web Service (optional: defaults to -1,-1)",
+            "*** The LPM DExchJobIdx is used by the Data Exchange RecordUpload Web Service",
+            "*** The LPM DExchJobClass and DExchJobId are used by the Data Exchange EndTransmission Web Service",
+            "*** The LPM DExchFlag is used to tell how to send the data",
+            "***\t- 1=Raw",
+            "***\t- 11=Binary",
+            "***\t- 21=Binary (Partial)",
+            "***",
+            "BEG DXS_TASKNAME,no",
+            "EXT Extract SQL (gets data to send)",
+            "EPM ObjectClass, ObjectId ",
+            "LOA DataExchange Job Parameters used by End Transmission (e.g. ?wqid=%wqid&store=%STRU)",
+            "LPM DExchJobIdx, DExchJobClass, DExchJobId, [1|11|21], DExchPercent, DExchTimeout",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DXS: Data Exchange Send - Data Set"
+    },
+    "TSK - DXS File" : {
+        "prefix": "dma-tsk-dxs-file",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if this is a file upload (otherwise it is a SQL command)",
+            "*** Set the reload flag to yes to \"prevent delete\" of the local file on a successful send",
+            "***\totherwise local file will automatically be deleted if the send is successful",
+            "*** The EPM params are used by the Data Exchange StartTransmission Web Service (optional: defaults to -1,-1)",
+            "*** The LPM DExchJobIdx is used by the Data Exchange RecordUpload Web Service",
+            "*** The LPM DExchJobClass and DExchJobId are used by the Data Exchange EndTransmission Web Service",
+            "*** The LPM DExchFlag is used to tell how to send the data",
+            "***\t- 11=Binary",
+            "***\t- 21=Binary (Partial)",
+            "*** NOTE: The DataExch directory (from registry) will be used if the HDR or FTR paths are NOT set",
+            "***",
+            "BEG DXS_TASKNAME,yes",
+            "EPM ObjectClass, ObjectId ",
+            "LPM -1, DExchJobClass, DExchJobId, [11|21], DExchPercent, DExchTimeout",
+            "FIL local/remote file name to upload",
+            "HDR local full path or DataExch subdir",
+            "FTR remote full path or DataExch subdir ",
+            "***REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DXS: Data Exchange Send - File"
+    },
+    "TSK - DXS Remote SQL" : {
+        "prefix": "dma-tsk-dxs-sql",
+        "body": [
+            "***",
+            "*** The EPM params are used by the Data Exchange StartTransmission Web Service (optional: defaults to -1,-1)",
+            "*** The LPM DExchJobIdx is used by the Data Exchange RecordUpload Web Service",
+            "*** The LPM DExchJobClass and DExchJobId are used by the Data Exchange EndTransmission Web Service",
+            "*** The LPM DExchFlag is used to tell Data Exchange that this is a remote SQL",
+            "***\t- 31=Remote SQL",
+            "***",
+            "BEG DXS_TASKNAME,no",
+            "EXT Remote SQL command",
+            "EPM ObjectClass, ObjectId ",
+            "LPM -1, DExchJobClass, DExchJobId, 31, DExchPercent, DExchTimeout",
+            "HDR remote connection name",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - DXS: Data Exchange Send - Remote SQL"
+    },
+    "TSK - EMS" : {
+        "prefix": "dma-tsk-ems",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if you want to send email only if there are errors",
+            "*** The reload flag is ignored",
+            "*** Set the Has Header flag to yes to include the CC List",
+            "*** Set the Has Footer flag to yes to include the BCC List",
+            "***",
+            "BEG EMS_TASKNAME,no",
+            "EXT subject",
+            "LOA email message",
+            "EPM from address (overrides the from address in the registry)",
+            "***LPM (yes/no) write \"send to\" info to DMA log file,(yes/no) is High Importance",
+            "FIL To: List Name (name of the User-Defined List)",
+            "HDR Cc: List Name (name of the User-Defined List)",
+            "FTR Bcc: List Name (name of the User-Defined List)",
+            "REL no,semi-colon separated list of attachments (Use <LOG>,<ERR>,<WARN>,<ALRT> for dma logs)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - EMS: Email: Send SMTP email message"
+    },
+    "TSK - ETL" : {
+        "prefix": "dma-tsk-etl",
+        "body": [
+            "***",
+            "*** If LPM ReplaceSnglQuote flag is yes then DMA will replace single quotes (in strings) to 2 single quotes",
+            "*** If LPM AddQuotes flag is yes then DMA will add single quotes around strings",
+            "***",
+            "*** NOTE: You can use a * for the FLD is the field map is a 1 to 1 mapping.",
+            "***\tWhen you use the FLD * you can also use %1TO1 variable in the VALUES ",
+            "***\tstatement for an INSERT to auto build the values",
+            "***",
+            "BEG ETL_TASKNAME, no",
+            "EXT Extract SQL command",
+            "LOA Insert SQL command",
+            "FLD Field Map (Position is LOA field, number in the field map is EXT field) ",
+            "***LPM ReplaceSnglQuote (yes.no), AddQuotes (yes/no)",
+            "***PVT SQL for selecting list of Pivot Columns (CrossTab)",
+            "***PPM Pivot parameters (PIVOT_FLD, PIVOT_VALUE and optional CONNNAME)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - ETL: Run a SQL extract, transform and load"
+    },
+    "TSK - EXT" : {
+        "prefix": "dma-tsk-ext",
+        "body": [
+            "***",
+            "*** If the REL flag is yes, the file is opened for appending",
+            "***",
+            "BEG EXT_TASKNAME,no",
+            "EXT Extract SQL command",
+            "FLD Field Map (Position is LOA field, number in the field map is EXT field) ",
+            "FIL Extract file information",
+            "***FPM yes for a SingleFilePerRecord",
+            "***REL yes",
+            "***PVT SQL for selecting list of Pivot Columns (CrossTab)",
+            "***PPM Pivot parameters (PIVOT_FLD, PIVOT_VALUE and optional CONNNAME)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - EXT: Run a SQL extract - Note: writes results to a file"
+    },
+    "TSK - GBL" : {
+        "prefix": "dma-tsk-gbl",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if the EXT attribute is a constant",
+            "***",
+            "BEG GBL_TASKNAME,no",
+            "EXT local udr name or constant value",
+            "LOA global udr name",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - GBL: Sets a GLOBAL UDR from a local UDR or a constant"
+    },
+    "TSK - FAP" : {
+        "prefix": "dma-tsk-fap",
+        "body": [
+            "***",
+            "*** If Transmission flag is set to yes then files are deleted after they are uploaded successfully.",
+            "***",
+            "BEG FAP_TASK,no",
+            "EXT = Path to local folder.",
+            "FIL = File name or file mask.",
+            "LOA = File name including path for target file on Ftp.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FAP: FTP - Uploads file(s) while appending to a single file"
+    },
+    "TSK - FDE" : {
+        "prefix": "dma-tsk-fde",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FDE_TASK,no",
+            "EXT = Path to local folder.",
+            "FIL = File name or file mask.",
+            "LOA = File name including path for target file on Ftp.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FDE: FTP - Checks if Directory Exists and sets a UDR to the value of 1 (if exists) else 0 (if does NOT exist)."
+    },
+    "TSK - FRF" : {
+        "prefix": "dma-tsk-frf",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FRF_TASK,no",
+            "EXT = Path to file.",
+            "FIL = File name or file mask.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FRF: FTP - Delete/Remove File(s)."
+    },
+    "TSK - FGT" : {
+        "prefix": "dma-tsk-fgt",
+        "body": [
+            "***",
+            "*** use the %f replacement in the LOA to have the file name only w/o an extension inserted.  Useful if downloading multiple files.",
+            "*** If Transmission flag is set to yes then files are deleted after they are downloaded successfully.",
+            "***",
+            "BEG FGT_TASK,no",
+            "EXT = Path to file(s) to get / download.",
+            "FIL = File name or file mask.",
+            "LOA = Local path where files are downloaded to.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FGT: FTP - Get/Download File(s)."
+    },
+    "TSK - FFE" : {
+        "prefix": "dma-tsk-ffe",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FFE_TASK,no",
+            "EXT = Path to folder.",
+            "FIL = file name.",
+            "LOA = udrname ",
+            "END",
+            "***",
+
+            "$1"
+        ],
+        "description": "DMA TSK - FFE: FTP - Check File Exists."
+    },
+    "TSK - FPT" : {
+        "prefix": "dma-tsk-fpt",
+        "body": [
+            "***",
+            "*** If transaction flag is set to yes then files are deleted after they are uploaded successfully.",
+            "***",
+            "BEG FPT_TASK,no",
+            "EXT = Path to local folder.",
+            "FIL = File name or file mask.",
+            "LOA = Ftp path where files are uploaded to. ",
+            "REL = If reload flag is set to yes; files are uploaded with a temp name and then renamed to original file name.  If populated the reload file name serves as ",
+            "\ta prefix for the unique name.  Default prefix is TMP_.  Unique name is ddHHmmssff.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FPT: FTP - Put/Upload File(s)."
+    },
+    "TSK - FMD" : {
+        "prefix": "dma-tsk-fmd",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FMD_TASK,no",
+            "EXT = Path on ftp server that folder will be created.",
+            "FIL = Name of folder to create.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FMD: FTP - Make/Create Directory"
+    },
+    "TSK - FRD" : {
+        "prefix": "dma-tsk-frd",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FRD_TASK,no",
+            "EXT = Path on ftp server that folder will be deleted.",
+            "FIL = Name of folder to delete.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FRD: FTP - Delete/Remove Directory."
+    },
+    "TSK - FRN" : {
+        "prefix": "dma-tsk-frn",
+        "body": [
+            "***",
+            "***",
+            "***",
+            "BEG FRN_TASK,no",
+            "EXT = source file.",
+            "LOA = new file name.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - FRN: FTP - Rename File."
+    },
+    "TSK - IIF" : {
+        "prefix": "dma-tsk-iif",
+        "body": [
+            "***",
+            "*** NOTE: If no elsetask is supplied, then dmbuilder will move to the next task",
+            "*** Set the transaction flag to yes to write results of the IFF condition to the log file",
+            "*** ",
+            "*** Below are some sample Conditions (VB):",
+            "***\tSystem.IO.File.Exists(\"C:\\Temp\\DMA.txt\")",
+            "***\t1=1",
+            "***\tSystem.IO.File.GetCreationTime(\"C:\\Temp\\Mjw.txt\") > \"3/22/2008\"",
+            "***\tSystem.IO.File.GetCreationTime(\"C:\\Temp\\Mjw.txt\").Date = Date.Today.Date",
+            "***",
+            "BEG IFF_TASKNAME,no",
+            "CND Condition statement",
+            "***CNR List of replacements to perform on the CND string",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - IFF: If,Then,Else - Moves to a task based on the condition supplied"
+    },
+    "TSK - INT Compiled DLL" : {
+        "prefix": "dma-tsk-int-dll",
+        "body": [
+            "BEG INT_TASKNAME,no",
+            "LOA My.Fully.Qualified.Class",
+            "LPM param1=value1;param2=value2",
+            "FTR My.dll",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - INT: Execute a DMA.Integration.IDmaIntegration object (Compiled DLL)"
+    },
+    "TSK - INT Embedded Code" : {
+        "prefix": "dma-tsk-int-embedded-code",
+        "body": [
+            "***",
+            "*** HDR = (CodeType) Used for uncompiled code defined in the task.  Valid values are CSharp OR VisualBasic",
+            "*** FIL = (CodeReferencedAssemblies) A comma delimited list of additional assemblies",
+            "***\trequired to run the code defined in the LOA attribute",
+            "*** LOA = (Code) Contains code in the language specified in the HDR attribute",
+            "BEG INT_TASKNAME,yes",
+            "HDR CSharp",
+            "LOA var test = \"Hello World\"",
+            "FTR My.Referenced.Assembly.dll,My.Other.Referenced.Assembly.dll",
+            "LPM param1=value1;param2=value2",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - INT: Execute a DMA.Integration.IDmaIntegration object (Embedded Code)"
+    },
+    "TSK - LCR" : {
+        "prefix": "dma-tsk-lcr",
+        "body": [
+            "***",
+            "*** Set the Reload flag to yes to return the newly created List Id (udr name is the reload file name)",
+            "*** the [LID_TKN] will be replaced with the new LIST_ID if used in the EXT attribute",
+            "***",
+            "BEG LCR_TASKNAME,no",
+            "EXT List Name ",
+            "LOA List Description",
+            "FIL List udr",
+            "***REL yes,udr name that contains the listid",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - LCR: Creates a new DMA List"
+    },
+    "TSK - LDD" : {
+        "prefix": "dma-tsk-ldd",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to append directory names to the list",
+            "***\tYou can use the RecordPrefix and RecordSuffix as a substring start and Length value (if you want a substring of the directory).",
+            "***",
+            "BEG LDD_TASKNAME,no",
+            "EXT path to look in",
+            "LOA ListName (must already exist)",
+            "FIL directorymask,,,,,[RecordPrefix],[RecordSuffix]",
+            "***FPM [UseFullPath],[RecursiveSearch]",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - LDD: Creates a List of Directories in the User Defined List Detail Table (List Must exist)"
+    },
+    "TSK - LDE" : {
+        "prefix": "dma-tsk-lde",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to delete the Detail Only",
+            "***",
+            "BEG LDE_TASKNAME,no",
+            "EXT ListName",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - LDE: Deletes a DMA List and/or List Detail"
+    },
+    "TSK - LDF" : {
+        "prefix": "dma-tsk-ldf",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to append file names to the list",
+            "*** NOTE: You can use the HasHeader and HasFooter to strip of the prefix and suffix of the filenames.",
+            "***\tTo strip a prefix or suffix from the filename, set the HasHeader or HasFooter to yes.",
+            "***",
+            "***\tFor example, the following FIL line would strip the '.zip' from each file name ",
+            "***",
+            "***\tFIL *.zip,,,no,yes",
+            "***",
+            "***\tAlso, you can use the RecordPrefix and RecordSuffix as a substring start and Length value (if you want a substring of the file).",
+            "***",
+            "BEG LDF_TASKNAME,no",
+            "EXT path to look in",
+            "LOA ListName (must already exist)",
+            "FIL filemask,,,[HasHeader],[HasFooter],[RecordPrefix],[RecordSuffix]",
+            "***FPM [UseFullPath],[RecursiveSearch]",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - LDF: Creates a List of files in the User Defined List Detail Table (List Must exist)"
+    },
+    "TSK - LDS" : {
+        "prefix": "dma-tsk-lds",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to append to the list",
+            "*** Set the Reload flag to true to make the UDRVAL_ID the same as the UDRVAL (must must be integer)",
+            "***",
+            "BEG LDS_TASKNAME,no",
+            "EXT Extract SQL command that returns the UDRVALs for the list",
+            "LOA ListName (must already exist)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - LDS: Creates DMA_UdrListDetail records from the provided Extract SQL (List Header Must exist)"
+    },
+    "TSK - LOA" : {
+        "prefix": "dma-tsk-loa",
+        "body": [
+            "***",
+            "*** NOTE: set the dbconnection to PARSER if you want to parse a file. The file",
+            "***\twill be parsed to the name assigned by reload (REL task attribute). If the",
+            "***\ttransaction flag is true the file will be appended to the PARSER file.",
+            "***",
+            "*** EPM NOTE: If the EPM is set to DELETE but there was an error, the file will NOT be deleted",
+            "*** ",
+            "***\t<optional> for EDI894 Loads (FIL filetype needs to be 894)",
+            "***\t\tHDR = Insert Sql for Header",
+            "***\t\tLOA = Insert Sql for Detail",
+            "***\t\tFTR = Insert Sql for Adjustments",
+            "***",
+            "BEG LOA_TASKNAME,no",
+            "LOA INSERT SQL command",
+            "FLD Field Map (Position is LOA field, number in the field map is file field) ",
+            "FIL Import file information",
+            "***RIX Regular Expression for record validation",
+            "***EXT Record Validation SQL",
+            "***EPM Path and name of the archive file (Use %f placeholder for filename) or DELETE to delete file",
+            "***REL yes/no,file name to use if dbconnection is PARSER",
+            "***NXT Task to move to if validation fails",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "LOA: Run a SQL transform and load - Note: read inputs from a file"
+    },
+    "TSK - MKD" : {
+        "prefix": "dma-tsk-mkd",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to check to see if the dir already exists",
+            "***",
+            "BEG MKD_TASKNAME,no",
+            "EXT path to create the folder in",
+            "FIL name of folder to create",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - MKD: Creates a new directory or folder"
+    },
+    "TSK - MOV" : {
+        "prefix": "dma-tsk-mov",
+        "body": [
+            "***",
+            "*** The transaction flag is ignored",
+            "*** NOTE: set the filetype of the FIL attribute to L (List) if the filename is a DMA User-defined list",
+            "***",
+            "BEG MOV_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "LOA path to move/copy the file(s) to",
+            "FIL name of file(s) to move/copy (NOTE: this can be a single filename, file mask or a |-separated list of file names/masks)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - MOV: Moves a file or set of files DEPRECATED - USE REN INSTEAD OF THIS TASK TYPE"
+    },
+    "TSK - PKF" : {
+        "prefix": "dma-tsk-pkf",
+        "body": [
+            "***",
+            "BEG PKF_TASKNAME,no",
+            "EXT SQL statement used to set udr value",
+            "LOA udr name to replace (NOTE: do not specify %)",
+            "FIL Task File Name to Parse",
+            "REL New Task File Name",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - PKF: Parse a Task File Template, replace a URG and create a new task file"
+    },
+    "TSK - REN" : {
+        "prefix": "dma-tsk-ren",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to keep a copy of the \"from\" file",
+            "*** Set the reload flag to overwrite the \"to\" file",
+            "*** NOTE: set the filetype of the FIL attribute to L (List) if the filename is a DMA User-defined list",
+            "***",
+            "BEG REN_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "LOA Path and name of to file (Use %f placeholder for filename, %s placeholder for suffix)",
+            "FIL name of file(s) to rename (NOTE: this can be a single filename, file mask or a |-separated list of file names/masks)",
+            "***LPM semi-colon list of replacement strings in the (name1=value1;name2=value2)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - REN: Renames, Copies or Moves a file or set of files"
+    },
+    "TSK - RGD" : {
+        "prefix": "dma-tsk-rgd",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to log an error if the registry key does not exists",
+            "***",
+            "BEG RGD_TASKNAME,no",
+            "LOA Registry SubKey Path (must begin with: HKCR\\,HKCU\\,HKLM\\,HKU\\ or HKCC\\)",
+            "FIL RegKey Name",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RGD: Deletes a Registry Key from the registry"
+    },
+    "TSK - RGG" : {
+        "prefix": "dma-tsk-rgg",
+        "body": [
+            "***",
+            "BEG RGG_TASKNAME,no",
+            "EXT Extract Sql that gets 1 row, 1 field for udr value",
+            "LOA Registry SubKey Path (must begin with: HKCR\\,HKCU\\,HKLM\\,HKU\\ or HKCC\\)",
+            "FIL RegKey Name",
+            "***LPM The type of registry key (String,DWord,QWord,Binary) Defaults to String",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RGG: Sets a Registry Key from the results of a SQL Statement"
+    },
+    "TSK - RGS" : {
+        "prefix": "dma-tsk-rgs",
+        "body": [
+            "***",
+            "BEG RGS_TASKNAME,no",
+            "EXT string or concatenated string (udr value)",
+            "LOA Registry SubKey Path (must begin with: HKCR\\,HKCU\\,HKLM\\,HKU\\ or HKCC\\)",
+            "FIL = RegKey Name",
+            "***LPM The type of registry key (String,DWord,QWord,Binary) Defaults to String",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RGS: Sets a Registry Key to a constant or concatenated string"
+    },
+    "TSK - RMD" : {
+        "prefix": "dma-tsk-rmd",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to recursively delete all the files subdirectories",
+            "***",
+            "BEG RMD_TASKNAME,no",
+            "EXT path to look in for the folder",
+            "***FIL name of folder (under path) to remove",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RMD: Removes an existing directory or folder"
+    },
+    "TSK - RRS" : {
+        "prefix": "dma-tsk-rrs",
+        "body": [
+            "***",
+            "*** The transaction flag is ignored",
+            "*** Set the reload flag to yes to delete the original file",
+            "*** Use either D or F as filetype,",
+            "***",
+            "BEG RRS_TASKNAME,no",
+            "FIL Path and name of file that needs the recordseparator replaced",
+            "***REL yes,reloadfileorsuffix",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RRS: Replaces the a record separator with a newline (one rec per line)"
+    },
+    "TSK - RUN" : {
+        "prefix": "dma-tsk-run",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes then wait for exe to finish",
+            "*** Set the reload flag to yes to show the CMD window",
+            "*** NOTE: UseShellExecute=true|[false] and LoadUserProfile=true|[false]. ",
+            "***\tUserName,Password and Domain are used to run process as a certain user.",
+            "***",
+            "BEG RUN_TASKNAME,no",
+            "EXT path to look in for the exe",
+            "LOA command line parameters to pass to exe",
+            "FIL name of exe to run",
+            "***LPM UseShellExecute,LoadUserProfile,UserName,Password,Domain",
+            "***REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RUN: Runs an exe"
+    },
+    "TSK - RVZ" : {
+        "prefix": "dma-tsk-rvz",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting on encountering a cancel state",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting on encountering a cancel state",
+            "*** If reload flag to yes:",
+            "***\t- End TLC processing on cancel",
+            "*** If reload flag is no:",
+            "***\t- If reload filename, filename is the task name to goto on cancel",
+            "***\t- If NO reload filename, dmbuilder will move to next task on cancel",
+            "*** ",
+            "BEG RVZ_TASKNAME,no",
+            "EXT Extract Sql (gets only 1 row - field count should be equal to the number of values in the LOA)",
+            "LOA comma-separated list of expected values",
+            "***EPM Number of Milliseconds to wait before re-running the SQL (default = 10000)",
+            "***LPM Number of times to try before generating an error (defaults to 0 = unlimited tries)",
+            "***HDR comma-separated list of cancel values (if returned sql matches this RVZ will end)",
+            "***REL Setting this to yes will cause the TLC processing to end upon encountering a cancel state.",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - RVZ: Rendezvous with another process (sleeps or waits until the process is complete)"
+    },
+    "TSK - SQL" : {
+        "prefix": "dma-tsk-sql",
+        "body": [
+            "BEG SQL_TASKNAME,no",
+            "LOA SQL command (DELETE, UPDATE, etc.)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "SQL: Runs a SQL command that returns no results (e.g. UPDATE, DELETE)"
+    },
+    "TSK - UNZ" : {
+        "prefix": "dma-tsk-unz",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to recreate the path info when unzipping",
+            "*** Set the reload flag to yes to show CMD window",
+            "***",
+            "BEG UNZ_TASKNAME,no",
+            "EXT path/zipfilename",
+            "LOA path to unzip files to",
+            "FIL filename(s) to extract from the zip file (use *.* for all)",
+            "***EPM Exit TSK or TLF on unzip error (valid entries - blank, TLF or TLC)",
+            "***REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - UNZ: UNZs a file or set of files"
+    },
+    "TSK - URC" : {
+        "prefix": "dma-tsk-urc",
+        "body": [
+            "BEG URC_TASKNAME,no",
+            "EXT key path relative to the root (i.e. SharedDefs)",
+            "EPM Default value to use if no value is specified in the configuration",
+            "LOA udrname ",
+            "FIL Configuration Key Name (i.e. PathInstall)",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the EXT (key path)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URC: Set a udr to a configuration value"
+    },
+    "TSK - URD" : {
+        "prefix": "dma-tsk-urd",
+        "body": [
+            "***",
+            "*** The EPM format string is applied after all transformations have been applied",
+            "*** Use \\n,<CRLF>,<COMMA>,<SPACE> or <TAB> instead of actual characters for EPM attribute",
+            "***",
+            "BEG URD_TASKNAME,no",
+            "EXT Extract Sql - 1st column (ord value of 0) is used for the delimited udr list, other fields used in LPM",
+            "LOA udrname ",
+            "***EPM format string - must contain {0} for transformed column and %x for field values (e.g. {0} AS DESCRIPTION%1)",
+            "***LPM field delimiter (default is comma)",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URD: Sets a udr to a Delimited List created from a database query"
+    },
+    "TSK - URF" : {
+        "prefix": "dma-tsk-urf",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to create a list of values (separated by fieldseparator) if a filemask is provided",
+            "***\t(NOTE: if the transaction flag is no then the last file that matches the filemask will be used)",
+            "*** filefunc - valid functions are: ",
+            "***\tMDAT - Modified Date (YYYYMMDD)",
+            "***\tMDAY - Modified Day (DD)",
+            "***\tMMON - Modified Month (MM)",
+            "***\tMYEA - Modified Year (YYYY)",
+            "***\tCDAT - Create Date (YYYYMMDD)",
+            "***\tCDAY - Create Day (DD)",
+            "***\tCMON - Create Month (MM)",
+            "***\tCYEA - Create Year (YYYY)",
+            "***\tSIZE - File Size",
+            "***\tSSTR - filename (without path) ",
+            "***\tFPTH - filename (with fullpath)",
+            "***\tSUFX - file suffix",
+            "*** NOTE: You can use the HasHeader and HasFooter to strip of the prefix and suffix of the filenames.",
+            "***\tTo strip a prefix or suffix from the filename, set the HasHeader or HasFooter to yes.",
+            "*** ",
+            "***\tFor example, the following FIL line would strip the '.zip' from each file name ",
+            "*** ",
+            "***\tFIL *.zip,,,no,yes",
+            "*** ",
+            "***\tAlso, you can use the RecordPrefix and RecordSuffix as a substring start and Length value (if you want a substring of the file).",
+            "***",
+            "BEG URF_TASKNAME,no",
+            "EXT path to look in for the file",
+            "LOA udrname",
+            "FIL filemask,,[fieldseparator],[HasHeader],[HasFooter],[RecordPrefix],[RecordSuffix]",
+            "***FLD Required if you want to run transformations (you must use a * for this to work)",
+            "***SDX If you specify transformations you must have the FLD command",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URF: Sets a udr to the results of the filefunction"
+    },
+    "TSK - URG" : {
+        "prefix": "dma-tsk-urg",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make these GLOBAL UDRs (available in other tlfs within a TLC)",
+            "***",
+            "BEG URG_TASKNAME,no",
+            "EXT Extract Sql (gets only 1 row - field count should be same as udr list count",
+            "LOA comma-separated list of udr names",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+
+            "$1"
+        ],
+        "description": "DMA TSK - URG: Sets a udr from the results of a SQL Statement"
+    },
+    "TSK - URJ" : {
+        "prefix": "dma-tsk-urj",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make this a GLOBAL UDR (available in other tlfs within a TLC)",
+            "***",
+            "BEG URJ_TASKNAME,no",
+            "EXT Token path to find (see http://goessner.net/articles/JsonPath/)",
+            "LOA comma-separated list of udr names",
+            "FIL Full path and name of JSON file",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URJ: Sets a udr to the result of a JPath expression run against a JSON file"
+    },
+    "TSK - URN" : {
+        "prefix": "dma-tsk-urn",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make these GLOBAL UDRs (available in other tlfs within a TLC)",
+            "***",
+            "BEG URN_TASKNAME,no",
+            "EXT NAME field in the DMA_NextIds table ",
+            "LOA udrname",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EPM NextId block size (defaults to 1)",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URN: Sets a udr to the NextId returned from the DMASYS.DMA_NextIds table"
+    },
+    "TSK - URR" : {
+        "prefix": "dma-tsk-urr",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make this a GLOBAL UDR (available in other tlfs within a TLC)",
+            "***",
+            "BEG URR_TASKNAME,no",
+            "EXT Registry SubKey Path (must begin with: HKCR\\,HKCU\\,HKLM\\,HKU\\ or HKCC\\)",
+            "LOA udrname ",
+            "FIL RegKey Name",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URR: Reads a udr value from the Registry and sets the udr"
+    },
+    "TSK - URS" : {
+        "prefix": "dma-tsk-urs",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make this a GLOBAL UDR (available in other tlfs within a TLC)",
+            "***",
+            "BEG URS_TASKNAME,no",
+            "EXT string or concatenated string (udr value)",
+            "LOA udrname ",
+            "***FIL .resx file (note if this is set then the EXT value is the resx key)",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "***EXR List of replacements to perform on the Extract SQL",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URS: Sets a udr to a constant or concatenated string"
+    },
+    "TSK - URX" : {
+        "prefix": "dma-tsk-urx",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to make this a GLOBAL UDR (available in other tlfs within a TLC)",
+            "***",
+            "BEG URX_TASKNAME,no",
+            "EXT Node path to find (e.g. /configuration/system.web.extensions/scripting/webServices/jsonSerialization) ",
+            "LOA comma-separated list of udr names",
+            "FIL Full path and name of XML file",
+            "***FLD Required if you want to run transformations",
+            "***SDX If you specify transformations you must have the FLD command",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - URX: Sets a udr to the result of an XPath expression run against an XML file"
+    },
+    "TSK - WCE" : {
+        "prefix": "dma-tsk-wce",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to append/replace inner xml (if no LOA attribute is ignored)",
+            "*** Set the reload flag to yes to Replace (instead of append) the inner xml with the LOA string",
+            "***",
+            "BEG WCE_TASKNAME,no",
+            "EXT Node path to modify (e.g. /configuration/system.web.extensions/scripting/webServices/jsonSerialization)",
+            "PVT XSLT to apply to the specified file (if specified, no other changes are made besides the XSLT)",
+            "LOA Inner XML string to append or replace (e.g. <add extension='.dmax' type='System.Web.Compilation.ResXBuildProvider'/>",
+            "FIL Full path and name of web.config file",
+            "***LPM <optional> space delimited list of xml attribute additions/replacements (name1=\"value1\" name2=\"value2\")",
+            "***REL yes|[no] - yes to replace inner xml",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - WCE: Web.Config Edit - modify web config file"
+    },
+    "TSK - WQD" : {
+        "prefix": "dma-tsk-wqd",
+        "body": [
+            "***",
+            "*** NOTE: Must pass the wqid udr to the workflow for this to work",
+            "***",
+            "BEG WQD_TASKNAME,no",
+            "LOA WQ Description",
+            "***FIL resx file (note if this is set then the LOA value is the resx key)",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - WQD: Updates the Description of a WorkQueue - Used for portal messages"
+    },
+    "TSK - WQR" : {
+        "prefix": "dma-tsk-wqr",
+        "body": [
+            "***",
+            "*** NOTE: Must pass the wqid udr to the workflow for this to work",
+            "***",
+            "BEG WQR_TASKNAME,no",
+            "EXT = Parameter String without the leading ? (e.g. sdate=20070101&store=1)",
+            "LOA = Report Description",
+            "*** UnComment the following to set the ServiceId or UserId",
+            "*** HDR = ServiceId (Optional, defaults to 1)",
+            "*** FTR = UserId (Optional, defaults to -1)",
+            "LPM JobClass,JobId",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - WQR: Schedule a Report/Job in the Work Queue"
+    },
+    "TSK - WSS" : {
+        "prefix": "dma-tsk-wss",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if password is encrypted",
+            "***",
+            "BEG WSS_TASKNAME,no",
+            "EXT = Web Service ID (e.g. LNTEST, LNPROD)",
+            "HDR = Web Service Login name",
+            "FTR = Web Service Password",
+            "FIL = File to read and send ",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - WSS: Send a file to a Web Service"
+    },
+    "TSK - XFE" : {
+        "prefix": "dma-tsk-xfe",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting",
+            "*** Set the reload flag to yes to end the emtire TLC processing",
+            "***",
+            "BEG XFE_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "FIL filemask",
+            "*** REL yes",
+            "END ",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XFE: Exit the dmbuilder job if the file exists"
+    },
+    "TSK - XFN" : {
+        "prefix": "dma-tsk-fap",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting",
+            "*** Set the reload flag to yes to end the emtire TLC processing",
+            "***",
+            "BEG XFN_TASKNAME,no",
+            "EXT path to look in for the file(s)",
+            "FIL filemask",
+            "*** REL yes",
+            "END ",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XFN: Exit the dmbuilder job if a file does not exist"
+    },
+    "TSK - XMD" : {
+        "prefix": "dma-tsk-xmd",
+        "body": [
+            "***",
+            "BEG XMD_TASKNAME,no",
+            "EXT Node path to modify (e.g. /configuration/system.web.extensions/scripting/webServices/jsonSerialization) ",
+            "FIL Full path and name of XML file",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XMD: Delete XML Node"
+    },
+    "TSK - XME" : {
+        "prefix": "dma-tsk-xme",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to append/replace inner xml (if no LOA attribute is ignored)",
+            "*** Set the reload flag to yes to Replace (instead of append) the inner xml with the LOA string",
+            "***",
+            "BEG XME_TASKNAME,no",
+            "EXT Node path to modify (e.g. /configuration/system.web.extensions/scripting/webServices/jsonSerialization) ",
+            "PVT XSLT to apply to the specified file (if specified, no other changes are made besides the XSLT)",
+            "LOA Inner XML string to append or replace (e.g. <add extension='.dmax' type='System.Web.Compilation.ResXBuildProvider'/>",
+            "FIL Full path and name of XML file",
+            "***LPM <optional> space delimited list of xml attribute additions/replacements (name1=\"value1\" name2=\"value2\")",
+            "***REL yes|[no],output file - yes to replace inner xml or, if xslt, yes to output to output file",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XME: XML Edit - modify XML file"
+    },
+    "TSK - XUE" : {
+        "prefix": "dma-tsk-xue",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting",
+            "*** Set the reload flag to yes to end the emtire TLC processing",
+            "***",
+            "BEG XUE_TASKNAME,no",
+            "EXT = udr value used for comparison",
+            "LOA = udrname ",
+            "*** UnComment the following 2 lines if you want to run transformations",
+            "*** FLD 0",
+            "*** SDX 0,transnum",
+            "*** REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XUE: Exit the dmbuilder job if the sdr or udr value is equal to the comparison value"
+    },
+    "TSK - XUN" : {
+        "prefix": "dma-tsk-xun",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes if dmbuilder should log an error before exiting",
+            "*** Set the reload flag to yes to end the emtire TLC processing",
+            "***",
+            "BEG XUN_TASKNAME,no",
+            "EXT = udr value used for comparison",
+            "LOA = udrname ",
+            "*** UnComment the following 2 lines if you want to run transformations",
+            "*** FLD 0",
+            "*** SDX 0,transnum",
+            "*** REL yes",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - XUN: Exit the dmbuilder job if the sdr or udr value is NOT equal to the comparison value"
+    },
+    "TSK - ZIP" : {
+        "prefix": "dma-tsk-zip",
+        "body": [
+            "***",
+            "*** Set the transaction flag to yes to delete file(s) after they are archived in the Zip file.",
+            "*** Set the reload flag to yes to show CMD window",
+            "***",
+            "BEG ZIP_TASKNAME,no",
+            "EXT path/zipfilename",
+            "LOA path to read files from",
+            "FIL filemask used for adding files to the zip file (use *.* for all)",
+            "REL no",
+            "END",
+            "***",
+            "$1"
+        ],
+        "description": "DMA TSK - ZIP: ZIPs a file or set of files"
+    },
+    "TLF - ALI" : {
+        "prefix": "dma-tlf-ali",
+        "body": [
+            "ALI task",
+            "$1"
+        ],
+        "description": "DMA TLF - ALI: Generate an Alert Instance for the given Alert Class/ID"
+    },
+    "TLF - ALN" : {
+        "prefix": "dma-tlf-aln",
+        "body": [
+            "ALN task",
+            "$1"
+        ],
+        "description": "DMA TLF - ALN: Add Line Numbers to a file or replace strings in a file - writes output to reload file"
+    },
+    "TLF - C1C" : {
+        "prefix": "dma-tlf-c1c",
+        "body": [
+            "C1L task",
+            "$1"
+        ],
+        "description": "DMA TLF - C1C: Setup CrossTab Report fields"
+    },
+    "TLF - C1L" : {
+        "prefix": "dma-tlf-c1l",
+        "body": [
+            "C1L task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - C1L: Loads a Component One Report and set connection string"
+    },
+    "TLF - C1I" : {
+        "prefix": "dma-tlf-c1i",
+        "body": [
+            "C1I task",
+            "$1"
+        ],
+        "description": "DMA TLF - C1I: Initialize the ConnectionString and/or RecordSource to a DMA Udr; Note: This must be called after the C1L task in the TLF"
+    },
+    "TLF - C1P" : {
+        "prefix": "dma-tlf-c1p",
+        "body": [
+            "C1P task",
+            "$1"
+        ],
+        "description": "DMA TLF - C1P: Prints a Component One Report to a file (PDF, XLS, HTML, etc.)"
+    },
+    "TLF - C1R" : {
+        "prefix": "dma-tlf-c1r",
+        "body": [
+            "C1R task",
+            "$1"
+        ],
+        "description": "DMA TLF - C1R: Replaces a variable in a Component One Report (used with Record Source, Sorting/Grouping, etc.)"
+    },
+    "TLF - CLR" : {
+        "prefix": "dma-tlf-clr",
+        "body": [
+            "CLR [TSK|UDX]",
+            "$1"
+        ],
+        "description": "DMA TLF - CLR: Clears the loaded Tasks or User-Defined Transformations, Valid object types are: TSK or UDX"
+    },
+    "TLF - CMJ" : {
+        "prefix": "dma-tlf-cmj",
+        "body": [
+            "CMJ mjgrp",
+            "$1"
+        ],
+        "description": "DMA TLF - CMJ: Clears a Managed Job Group Status"
+    },
+    "TLF - CNT" : {
+        "prefix": "dma-tlf-cnt",
+        "body": [
+            "CNT task",
+            "$1"
+        ],
+        "description": "DMA TLF - CNT: Adds, Subtracts or Sets a user Count"
+    },
+    "TLF - CPD" : {
+        "prefix": "dma-tlf-cpd",
+        "body": [
+            "CPD task",
+            "$1"
+        ],
+        "description": "DMA TLF - CPD: Copies or Moves a directory and all it's files and folders"
+    },
+    "TLF - CPY" : {
+        "prefix": "dma-tlf-cpy",
+        "body": [
+            "CPY task",
+            "$1"
+        ],
+        "description": "DMA TLF - CPY: Copies a file or set of files DEPRECATED - USE REN INSTEAD OF THIS TASK TYPE"
+    },
+    "TLF - DAY" : {
+        "prefix": "dma-tlf-day",
+        "body": [
+            "DAY task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - DAY: Builds the DMA Day dimension table"
+    },
+    "TLF - DBC" : {
+        "prefix": "dma-tlf-dbc",
+        "body": [
+            "DBC dbconnList",
+            "$1"
+        ],
+        "description": "DMA TLF - DBC: Closes a DMA database connection"
+    },
+    "TLF - DBN" : {
+        "prefix": "dma-tlf-dbn",
+        "body": [
+            "DBN NewConnName,NewDBName",
+            "$1"
+        ],
+        "description": "DMA TLF - DBN: Creates a New DMA database Connection (clone of SysConn)"
+    },
+    "TLF - DBO" : {
+        "prefix": "dma-tlf-dbo",
+        "body": [
+            "DBO dbconnList",
+            "$1"
+        ],
+        "description": "DMA TLF - DBO: Opens a DMA database connection"
+    },
+    "TLF - DEL" : {
+        "prefix": "dma-tlf-del",
+        "body": [
+            "DEL task",
+            "$1"
+        ],
+        "description": "DMA TLF - DEL: Deletes a file or set of files"
+    },
+    "TLF - DFT" : {
+        "prefix": "dma-tlf-dft",
+        "body": [
+            "DFT task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - DFT: Document field types (DEBUG - prints field type for each field in select)"
+    },
+    "TLF - DMB" : {
+        "prefix": "dma-tlf-dmb",
+        "body": [
+            "DMB task",
+            "$1"
+        ],
+        "description": "DMA TLF - DMB: Run a dmBuilder TLF or TLC"
+    },
+    "TLF - DNN" : {
+        "prefix": "dma-tlf-dnn",
+        "body": [
+            "DNN task",
+            "$1"
+        ],
+        "description": "DMA TLF - DNN: Makes a DNN WebService Call"
+    },
+    "TLF - DXF" : {
+        "prefix": "dma-tlf-dxf",
+        "body": [
+            "DXF task,extconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - DXF: Data Exchange Send files in a Directory"
+    },
+    "TLF - DXH" : {
+        "prefix": "dma-tlf-dxh",
+        "body": [
+            "DXH task,dxchconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - DXH: Data Exchange Http Request"
+    },
+    "TLF - DXS" : {
+        "prefix": "dma-tlf-dxs",
+        "body": [
+            "DXS task,extconnection,dxchconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - DXS: Data Exchange Send"
+    },
+    "TLF - EMS" : {
+        "prefix": "dma-tlf-ems",
+        "body": [
+            "EMS task",
+            "$1"
+        ],
+        "description": "DMA TLF - EMS: Email: Send SMTP email message"
+    },
+    "TLF - ETL" : {
+        "prefix": "dma-tlf-etl",
+        "body": [
+            "ETL task,extconnection,loaconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - ETL: Extracts data from a database and writes it to another database/table"
+    },
+    "TLF - EXT" : {
+        "prefix": "dma-tlf-ext",
+        "body": [
+            "EXT task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - EXT: Extracts data from a database and writes it to a file"
+    },
+    "TLF - FAP" : {
+        "prefix": "dma-tlf-fap",
+        "body": [
+            "FAP task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FAP: FTP - Uploads file(s) while appending to a single file"
+    },
+    "TLF - FDE" : {
+        "prefix": "dma-tlf-fde",
+        "body": [
+            "FDE task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FDE: FTP - Checks if Directory Exists and sets a UDR to the value of 1 (if exists) else 0 (if does NOT exist)."
+    },
+    "TLF - FRF" : {
+        "prefix": "dma-tlf-frf",
+        "body": [
+            "FRF task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FRF: FTP - Delete/Remove File(s)"
+    },
+    "TLF - FGT" : {
+        "prefix": "dma-tlf-fgt",
+        "body": [
+            "FGT task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FGT: FTP - Get/Download File(s)"
+    },
+    "TLF - FFE" : {
+        "prefix": "dma-tlf-ffe",
+        "body": [
+            "FFE task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FFE: FTP - Check File Exists"
+    },
+    "TLF - FPT" : {
+        "prefix": "dma-tlf-fpt",
+        "body": [
+            "FPT task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FPT: FTP - Put/Upload File(s)"
+    },
+    "TLF - FMD" : {
+        "prefix": "dma-tlf-fmd",
+        "body": [
+            "FMD task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FMD: FTP - Make/Create Directory"
+    },
+    "TLF - FRD" : {
+        "prefix": "dma-tlf-frd",
+        "body": [
+            "FRD task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FRD: FTP - Delete/Remove Directory"
+    },
+    "TLF - FRN" : {
+        "prefix": "dma-tlf-frn",
+        "body": [
+            "FRN task,ftpconnname",
+            "$1"
+        ],
+        "description": "DMA TLF - FRN: FTP - Rename File"
+    },
+    "TLF - GBL" : {
+        "prefix": "dma-tlf-gbl",
+        "body": [
+            "GBL task",
+            "$1"
+        ],
+        "description": "DMA TLF - GBL: Sets a GLOBAL UDR from a local UDR or a constant"
+    },
+    "TLF - IFF" : {
+        "prefix": "dma-tlf-iff",
+        "body": [
+            "IFF cndtask,iftask,[elsetask]",
+            "$1"
+        ],
+        "description": "DMA TLF - IFF: If,Then,Else - Moves to a task based on the condition supplied"
+    },
+    "TLF - INT" : {
+        "prefix": "dma-tlf-int",
+        "body": [
+            "INT taskname",
+            "$1"
+        ],
+        "description": "DMA TLF - INT: Execute a DMA.Integration.IDmaIntegration object"
+    },
+    "TLF - LBL" : {
+        "prefix": "dma-tlf-lbl",
+        "body": [
+            "LBL taskname",
+            "$1"
+        ],
+        "description": "DMA TLF - LBL: Placeholder that can be used as a branch from an IFF task (performs no operation)"
+    },
+    "TLF - LCR" : {
+        "prefix": "dma-tlf-lcr",
+        "body": [
+            "LCR task",
+            "$1"
+        ],
+        "description": "DMA TLF - LCR: Creates a new DMA List"
+    },
+    "TLF - LDD" : {
+        "prefix": "dma-tlf-ldd",
+        "body": [
+            "LDD task",
+            "$1"
+        ],
+        "description": "DMA TLF - LDD: Creates a List of directories in the User Defined List Detail Table (List Must exist)"
+    },
+    "TLF - LDE" : {
+        "prefix": "dma-tlf-lde",
+        "body": [
+            "LDE task",
+            "$1"
+        ],
+        "description": "DMA TLF - LDE: Deletes a DMA List and/or List Detail"
+    },
+    "TLF - LDF" : {
+        "prefix": "dma-tlf-ldf",
+        "body": [
+            "LDF task",
+            "$1"
+        ],
+        "description": "DMA TLF - LDF: Creates a List of files in the User Defined List Detail Table (List Must exist)"
+    },
+    "TLF - LDS" : {
+        "prefix": "dma-tlf-lds",
+        "body": [
+            "LDS task,extconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - LDS: Creates DMA_UdrListDetail records from the provided Extract SQL (List Header Must exist)"
+    },
+    "TLF - LOA" : {
+        "prefix": "dma-tlf-loa",
+        "body": [
+            "LOA task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - LOA: Reads data from a file, transforms fields and writes to a database"
+    },
+    "TLF - MKD" : {
+        "prefix": "dma-tlf-mkd",
+        "body": [
+            "MKD task",
+            "$1"
+        ],
+        "description": "DMA TLF - MKD: Creates a new directory or folder"
+    },
+    "TLF - MOV" : {
+        "prefix": "dma-tlf-mov",
+        "body": [
+            "MOV task",
+            "$1"
+        ],
+        "description": "DMA TLF - MOV: Moves a file or set of files DEPRECATED - USE REN INSTEAD OF THIS TASK TYPE"
+    },
+    "TLF - PKF" : {
+        "prefix": "dma-tlf-pkf",
+        "body": [
+            "PKF task",
+            "$1"
+        ],
+        "description": "DMA TLF - PKF: Parse a Task File Template, replace a URG and create a new task file"
+    },
+    "TLF - REN" : {
+        "prefix": "dma-tlf-ren",
+        "body": [
+            "REN task",
+            "$1"
+        ],
+        "description": "DMA TLF - REN: Renames, copies or Moves a file or set of files (replaces MOV and CPY)"
+    },
+    "TLF - RGD" : {
+        "prefix": "dma-tlf-rgd",
+        "body": [
+            "RGD task",
+            "$1"
+        ],
+        "description": "DMA TLF - RGD: Deletes a Registry Key from the registry"
+    },
+    "TLF - RGG" : {
+        "prefix": "dma-tlf-rgg",
+        "body": [
+            "RGG task",
+            "$1"
+        ],
+        "description": "DMA TLF - RGG: Sets a Registry Key from the results of a SQL Statement"
+    },
+    "TLF - RGS" : {
+        "prefix": "dma-tlf-rgs",
+        "body": [
+            "RGS task",
+            "$1"
+        ],
+        "description": "DMA TLF - RGS: Sets a Registry Key to a constant or concatenated string"
+    },
+    "TLF - RMD" : {
+        "prefix": "dma-tlf-rmd",
+        "body": [
+            "RMD task",
+            "$1"
+        ],
+        "description": "DMA TLF - RMD: Removes an existing directory or folder"
+    },
+    "TLF - RRS" : {
+        "prefix": "dma-tlf-rrs",
+        "body": [
+            "RRS task",
+            "$1"
+        ],
+        "description": "DMA TLF - RRS: Replaces the a record separator with a newline (one rec per line)"
+    },
+    "TLF - RSN" : {
+        "prefix": "dma-tlf-rsn",
+        "body": [
+            "RSN seq",
+            "$1"
+        ],
+        "description": "DMA TLF - RSN: Reset SDX Sequence Number"
+    },
+    "TLF - RUN" : {
+        "prefix": "dma-tlf-run",
+        "body": [
+            "RUN task",
+            "$1"
+        ],
+        "description": "DMA TLF - RUN: Runs an exe"
+    },
+    "TLF - RVZ" : {
+        "prefix": "dma-tlf-rvz",
+        "body": [
+            "RVZ task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - RVZ: Rendezvous with another process (sleeps or waits until the process is complete)"
+    },
+    "TLF - SLP" : {
+        "prefix": "dma-tlf-slp",
+        "body": [
+            "SLP Miliseconds",
+            "$1"
+        ],
+        "description": "DMA TLF - SLP: Sleeps or Waits for x number of milliseconds"
+    },
+    "TLF - SQL" : {
+        "prefix": "dma-tlf-sql",
+        "body": [
+            "SQL task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - SQL: Runs a SQL command that returns no results (e.g. UPDATE, DELETE)"
+    },
+    "TLF - SNC" : {
+        "prefix": "dma-tlf-snc",
+        "body": [
+            "SNC task,sourcetype,desttype",
+            "$1"
+        ],
+        "description": "DMA TLF - SNC: Extracts data from primary source, modifies the data and transfers data to destination using VB.NET code"
+    },
+    "TLF - SWF" : {
+        "prefix": "dma-tlf-swf",
+        "body": [
+            "SWF switch",
+            "$1"
+        ],
+        "description": "DMA TLF - SWF: Turns a TLF Switch Off (false)"
+    },
+    "TLF - SWO" : {
+        "prefix": "dma-tlf-swo",
+        "body": [
+            "SWO switch",
+            "$1"
+        ],
+        "description": "DMA TLF - SWO: Turns a TLF Switch On (true)"
+    },
+    "TLF - TSK" : {
+        "prefix": "dma-tlf-tsk",
+        "body": [
+            "TSK taskfile",
+            "$1"
+        ],
+        "description": "DMA TLF - TSK: loads the tasks defined in the DMA task file"
+    },
+    "TLF - UDX" : {
+        "prefix": "dma-tlf-udx",
+        "body": [
+            "UDX udxfile",
+            "$1"
+        ],
+        "description": "DMA TLF - UDX: loads the user-defined transformations defined in the DMA UDX file"
+    },
+    "TLF - UNZ" : {
+        "prefix": "dma-tlf-unz",
+        "body": [
+            "UNZ task",
+            "$1"
+        ],
+        "description": "DMA TLF - UNZ: unzip a file or set of files"
+    },
+    "TLF - URD" : {
+        "prefix": "dma-tlf-urd",
+        "body": [
+            "URD task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - URD: Sets a udr to a Delimited List created from a database query"
+    },
+    "TLF - URF" : {
+        "prefix": "dma-tlf-urf",
+        "body": [
+            "URF task,filefunc",
+            "$1"
+        ],
+        "description": "DMA TLF - URF: Sets a udr to the results of the file function "
+    },
+    "TLF - URO" : {
+        "prefix": "dma-tlf-uro",
+        "body": [
+            "URO classname",
+            "$1"
+        ],
+        "description": "DMA TLF - URO: Sets/Resets all of the udrs in the DMA_UdrOverride table for the given class and day_id"
+    },
+    "TLF - URG" : {
+        "prefix": "dma-tlf-urg",
+        "body": [
+            "URG task,dbconnection",
+            "$1"
+        ],
+        "description": "DMA TLF - URG: Sets a udr from the results of a SQL Statement"
+    },
+    "TLF - URJ" : {
+        "prefix": "dma-tlf-urj",
+        "body": [
+            "URJ task",
+            "$1"
+        ],
+        "description": "DMA TLF - URJ: Sets a udr to the result of a JPath expression run against a JSON file"
+    },
+    "TLF - URN" : {
+        "prefix": "dma-tlf-urn",
+        "body": [
+            "URN task",
+            "$1"
+        ],
+        "description": "DMA TLF - URN: Sets a udr to the NextId returned (from DMA_NextIds table)"
+    },
+    "TLF - URR" : {
+        "prefix": "dma-tlf-urr",
+        "body": [
+            "URR task",
+            "$1"
+        ],
+        "description": "DMA TLF - URR: Reads a udr value from the Registry and sets the udr"
+    },
+    "TLF - URS" : {
+        "prefix": "dma-tlf-urs",
+        "body": [
+            "URS task",
+            "$1"
+        ],
+        "description": "DMA TLF - URS: Sets a udr to a constant or concatenated string"
+    },
+    "TLF - URX" : {
+        "prefix": "dma-tlf-urx",
+        "body": [
+            "URX task",
+            "$1"
+        ],
+        "description": "DMA TLF - URX: Sets a udr to the result of an XPath expression run against an XML file"
+    },
+    "TLF - WQD" : {
+        "prefix": "dma-tlf-wqd",
+        "body": [
+            "WQD task",
+            "$1"
+        ],
+        "description": "DMA TLF - WQD: Updates the Description of a WorkQueue - Used for portal messages"
+    },
+    "TLF - WQR" : {
+        "prefix": "dma-tlf-wqr",
+        "body": [
+            "WQR task",
+            "$1"
+        ],
+        "description": "DMA TLF - WQR: Schedules a Job/Report to run - puts it into the Work Queue"
+    },
+    "TLF - WQS" : {
+        "prefix": "dma-tlf-wqs",
+        "body": [
+            "WQS dbconnection,[status]",
+            "$1"
+        ],
+        "description": "DMA TLF - WQS: Updates the Status of a WorkQueue request to either 2 (complete) or -1 (complete with errors)"
+    },
+    "TLF - WSS" : {
+        "prefix": "dma-tlf-wss",
+        "body": [
+            "WSS task",
+            "$1"
+        ],
+        "description": "DMA TLF - WSS: Send a file to a Web Service"
+    },
+    "TLF - XFE" : {
+        "prefix": "dma-tlf-xfe",
+        "body": [
+            "XFE task",
+            "$1"
+        ],
+        "description": "DMA TLF - XFE: Exit the dmbuilder job if the file exists"
+    },
+    "TLF - XFN" : {
+        "prefix": "dma-tlf-xfn",
+        "body": [
+            "XFN task",
+            "$1"
+        ],
+        "description": "DMA TLF - XFN: Exit the dmbuilder job if a file does not exist"
+    },
+    "TLF - XFZ" : {
+        "prefix": "dma-tlf-xfz",
+        "body": [
+            "XFZ task",
+            "$1"
+        ],
+        "description": "DMA TLF - XFZ: Exit the dmbuilder job if a file is zero length"
+    },
+    "TLF - XMD" : {
+        "prefix": "dma-tlf-xmd",
+        "body": [
+            "XMD task",
+            "$1"
+        ],
+        "description": "DMA TLF - XMD: Delete XML Node"
+    },
+    "TLF - XUE" : {
+        "prefix": "dma-tlf-xue",
+        "body": [
+            "XUE task",
+            "$1"
+        ],
+        "description": "DMA TLF - XUE: Exit the dmbuilder job if the sdr or udr value is equal to the comparison value"
+    },
+    "TLF - XUN" : {
+        "prefix": "dma-tlf-xun",
+        "body": [
+            "XUN task",
+            "$1"
+        ],
+        "description": "DMA TLF - XUN: Exit the dmbuilder job if the sdr or udr value is NOT equal to the comparison value"
+    },
+    "TLF - ZIP" : {
+        "prefix": "dma-tlf-zip",
+        "body": [
+            "ZIP task",
+            "$1"
+        ],
+        "description": "DMA TLF - ZIP: ZIPs a file or set of files"
+    }
+}
