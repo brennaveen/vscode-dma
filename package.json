@@ -2,7 +2,7 @@
   "name": "dma",
   "displayName": "DMA",
   "description": "Syntax highlighting and snippets for DMA files in vscode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "reasors",
   "repository": {
     "type": "git",
