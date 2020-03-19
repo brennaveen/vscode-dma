@@ -1,48 +1,48 @@
 {
-  "name": "dma",
-  "displayName": "DMA",
-  "description": "Syntax highlighting and snippets for DMA files in vscode",
-  "version": "0.0.2",
-  "publisher": "reasors",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brennaveen/vscode-dma.git"
-  },
-  "icon": "images/icon.jpg",
-  "engines": {
-    "vscode": "^1.33.0"
-  },
-  "categories": [
-    "Programming Languages",
-    "Snippets"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "dma",
-        "aliases": [
-          "dma"
-        ],
-        "extensions": [
-          "tlc",
-          "tlf",
-          "tsk"
-        ],
-        "configuration": "./language-configuration.json"
-      }
+    "name": "dma",
+    "displayName": "DMA",
+    "description": "Syntax highlighting and snippets for DMA files in vscode",
+    "version": "0.0.2",
+    "publisher": "Brenna Veen",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brennaveen/vscode-dma.git"
+    },
+    "icon": "images/icon.jpg",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
     ],
-    "grammars": [
-      {
-        "language": "dma",
-        "scopeName": "source.dma",
-        "path": "./syntaxes/dma.tmLanguage.json"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "dma",
-        "path": "./snippets/snippets.json"
-      }
-    ]
-  }
+    "contributes": {
+        "languages": [
+            {
+                "id": "dma",
+                "aliases": [
+                    "dma"
+                ],
+                "extensions": [
+                    "tlc",
+                    "tlf",
+                    "tsk"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dma",
+                "scopeName": "source.dma",
+                "path": "./syntaxes/dma.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "dma",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
 }
